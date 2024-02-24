@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  --fs-xl: clamp(7rem, 10vw + 1rem, 15rem);
+  --fs-l: clamp(3rem, 4rem, 6rem);
+  --fs-md: clamp(1.2rem, 1.7rem, 3rem);
+  --fs-sm: clamp(0.8rem, 1.3rem, 2rem);
+  --fs-xs: clamp(0.5rem, 1rem, 5rem);
+  --fs-xxs: clamp(0.5rem, 0.8rem, 3rem);
+}
+
+@media only screen and (min-width: 55rem) {
+  body {
+    --fs-xl: clamp(7rem, 15vw + 1rem, 30rem);
+    --fs-l: clamp(10rem, 20rem, 25rem);
+    --fs-md: clamp(3rem, 5rem, 7rem);
+    --fs-sm: clamp(0.8rem, 1.1rem, 2rem);
+    --fs-xs: clamp(0.5rem, 0.7rem, 2rem);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  font-family: "Grotesk-bold", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+Col {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Grotesk-bold";
+  src: url("./font/DINNeuzeitGroteskLT-BoldCond.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-light";
+  src: url("./font/DINNeuzeitGroteskLT-Light.ttf") format("truetype");
+}

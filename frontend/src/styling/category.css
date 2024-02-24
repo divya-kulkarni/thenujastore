@@ -1,0 +1,31 @@
+.category-container {
+  margin: 3rem 0.2rem !important;
+  color: black;
+  overflow: hidden !important;
+  text-align: center;
+}
+
+.category-container Col {
+  border-bottom: 1px solid #0000 !important;
+  margin: 0 !important;
+}
+
+.category-container h3 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-xxs);
+  font-weight: 300 !important;
+  margin-top: 1rem;
+}
+
+.category-container h2 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-sm);
+}
+
+.category {
+  padding-top: 3rem !important;
+}
+
+.category img {
+  cursor: pointer;
+}

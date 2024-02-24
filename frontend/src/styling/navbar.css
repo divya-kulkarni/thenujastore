@@ -1,0 +1,84 @@
+.navbar-container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+  z-index: 9999;
+}
+
+.navbar-container img {
+  width: 2rem;
+}
+
+nav {
+  margin-bottom: 0 !important;
+  background-color: transparent !important;
+  --bs-body-bg: transparent !important;
+}
+
+.navbar-brand {
+  text-align: center !important;
+}
+
+.offcanvas {
+  background-color: #6a9b78 !important;
+  color: white !important;
+  font-family: Grotesk-light;
+}
+
+.offcanvas-title {
+  font-size: var(--fs-md) !important;
+}
+
+.offcanvas-body {
+  margin-top: 4rem !important;
+  padding: 0 1rem !important;
+}
+
+hr {
+  border: 1px solid #cae1d1 !important;
+}
+
+.main-link {
+  font-size: var(--fs-sm) !important;
+  padding: 0 !important;
+}
+
+.other-link {
+  font-size: var(--fs-xs) !important;
+  color: #cae1d1 !important;
+}
+
+.inner-link {
+  font-size: var(--fs-xs) !important;
+}
+
+.top-nav {
+  margin-bottom: 2rem !important;
+}
+
+.accordion {
+  background-color: #6a9b78 !important;
+  border: none !important;
+  --bs-accordion-border-width: 0 !important;
+  --bs-accordion-border-radius: 0 !important;
+  --bs-accordion-bg: #6a9b78 !important;
+  --bs-accordion-btn-icon: url("../assets/icons/menu-after.svg") !important;
+  --bs-accordion-btn-active-icon: url("../assets/icons/menu-after.svg") !important;
+}
+
+button.accordion-button {
+  background-color: #6a9b78 !important;
+  padding: 0 !important;
+  color: white !important;
+  border-color: #6a9b78 !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.accordion-body {
+  background-color: #6a9b78 !important;
+  color: white !important;
+}

@@ -1,0 +1,45 @@
+.spotlight-container {
+  width: 100%;
+  position: relative;
+  /* padding-bottom: 15rem; */
+}
+
+.spotlight {
+  padding: 0 !important;
+}
+
+.spotlight,
+.spotlight-text {
+  color: black;
+  text-align: center;
+}
+
+.spotlight-text {
+  width: 50em;
+  color: white;
+  background-color: #1b1d1a;
+}
+
+.spotlight-text h3 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-xs);
+  font-weight: 300 !important;
+  margin-top: 1rem;
+}
+
+.spotlight-text h5 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-xxs);
+  font-weight: 300 !important;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.spotlight-text button {
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: var(--fs-xxs);
+  margin-bottom: 1rem;
+  background-color: #6a9b78;
+  border: none !important;
+}

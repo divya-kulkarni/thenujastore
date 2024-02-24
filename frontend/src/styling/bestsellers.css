@@ -1,0 +1,53 @@
+.bestseller-container {
+  margin: 3rem 0.2rem !important;
+  color: black;
+  overflow: hidden !important;
+  text-align: center;
+}
+
+.bestseller-container Col {
+  border-bottom: 1px solid #0000 !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.bestseller-container h4 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-xxs);
+}
+
+.bestseller-container h2 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-sm);
+  font-weight: 300 !important;
+}
+
+.bestseller h5,
+h6 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-xxs);
+  font-weight: 300 !important;
+}
+
+.bestseller h6 {
+  opacity: 0.5;
+}
+
+.bestseller {
+  padding-top: 3rem !important;
+}
+
+.bestseller img {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.bestseller-container button {
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: var(--fs-xxs);
+  margin-bottom: 1rem;
+  background-color: #6a9b78;
+  border: none !important;
+}
