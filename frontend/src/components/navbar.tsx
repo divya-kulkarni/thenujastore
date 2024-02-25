@@ -8,14 +8,26 @@ import shoppingCart from "../assets/icons/cart.svg";
 import { NavbarText } from "react-bootstrap";
 
 export const NavBar = () => {
+  const getNextPage = (path: string) => {
+    window.location.pathname = path;
+  };
   return (
     <div className="navbar-container">
+      <div className="banner" onClick={() => getNextPage("/products")}>
+        <h1>✨ FREE SHIPPING ON ALL ORDERS OVER $50 ✨</h1>
+      </div>
       <Navbar expand="md" className="mb-3" sticky="top">
         <Container fluid>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
-          <Navbar.Brand href="#">thenujastore</Navbar.Brand>
+          <Navbar.Brand onClick={() => getNextPage("/")}>
+            thenujastore
+          </Navbar.Brand>
           <NavbarText className="cart">
-            <img src={shoppingCart} alt="shopping cart" />
+            <img
+              src={shoppingCart}
+              alt="shopping cart"
+              onClick={() => getNextPage("/cart")}
+            />
           </NavbarText>
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-md`}
@@ -29,32 +41,46 @@ export const NavBar = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3 top-nav">
-                <Nav.Link className="main-link" href="#action1">
+                <Nav.Link
+                  className="main-link"
+                  href=""
+                  onClick={() => getNextPage("/")}
+                >
                   HOME
                 </Nav.Link>
                 <hr />
-                <Nav.Link className="main-link" href="#action2">
-                  NEW ARRIVALS
-                </Nav.Link>
+                <Nav.Link className="main-link">NEW ARRIVALS</Nav.Link>
                 <hr />
                 <Accordion defaultActiveKey="1">
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
-                      <Nav.Link className="main-link" href="#action2">
-                        SHOP
+                      <Nav.Link className="main-link">
+                        SHOP BY CATEGORY
                       </Nav.Link>
                     </Accordion.Header>
                     <Accordion.Body>
-                      <Nav.Link className="inner-link" href="#action2">
+                      <Nav.Link
+                        className="inner-link"
+                        onClick={() => getNextPage("/necklace")}
+                      >
                         NECKLACES
                       </Nav.Link>
-                      <Nav.Link className="inner-link" href="#action2">
+                      <Nav.Link
+                        className="inner-link"
+                        onClick={() => getNextPage("/bracelet")}
+                      >
                         BRACELETS
                       </Nav.Link>
-                      <Nav.Link className="inner-link" href="#action2">
+                      <Nav.Link
+                        className="inner-link"
+                        onClick={() => getNextPage("/earrings")}
+                      >
                         EARRINGS
                       </Nav.Link>
-                      <Nav.Link className="inner-link" href="#action2">
+                      <Nav.Link
+                        className="inner-link"
+                        onClick={() => getNextPage("/rings")}
+                      >
                         RINGS
                       </Nav.Link>
                     </Accordion.Body>
@@ -64,22 +90,28 @@ export const NavBar = () => {
                 <Accordion defaultActiveKey="1">
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
-                      <Nav.Link className="main-link" href="#action2">
-                        COLLECTIONS
+                      <Nav.Link className="main-link" href="">
+                        SHOP BY COLLECTIONS
                       </Nav.Link>
                     </Accordion.Header>
                     <Accordion.Body>
-                      <Nav.Link className="inner-link" href="#action2">
+                      <Nav.Link
+                        className="inner-link"
+                        onClick={() => getNextPage("/collections/rosebud")}
+                      >
                         BLOOMING ROSEBUD
                       </Nav.Link>
-                      <Nav.Link className="inner-link" href="#action2">
+                      <Nav.Link
+                        className="inner-link"
+                        onClick={() => getNextPage("/collections/fairytale")}
+                      >
                         FORGET-ME-NOT FAIRYTALE
                       </Nav.Link>
-                      <Nav.Link className="inner-link" href="#action2">
+                      <Nav.Link
+                        className="inner-link"
+                        onClick={() => getNextPage("/collections/pastel")}
+                      >
                         PASTEL DREAMS
-                      </Nav.Link>
-                      <Nav.Link className="inner-link" href="#action2">
-                        GOLDEN HOUR
                       </Nav.Link>
                     </Accordion.Body>
                   </Accordion.Item>

@@ -29,12 +29,14 @@
 
 .hero h2 {
   font-family: Grotesk-light;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-md);
   font-weight: 300 !important;
+  letter-spacing: 0.1rem;
 }
 
 .hero h5 {
   font-family: Grotesk-light;
-  font-size: var(--fs-xxs) !important;
+  font-size: var(--fs-xs) !important;
   font-weight: 300 !important;
+  letter-spacing: 0.1rem;
 }

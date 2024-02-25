@@ -1,0 +1,19 @@
+.social {
+  background-color: #f5f5f6;
+  width: 100%;
+  font-family: Grotesk-light;
+  text-align: center;
+  margin: 0;
+
+  h2 {
+    font-size: var(--fs-sm);
+    font-weight: 300 !important;
+    margin-top: 2rem;
+  }
+
+  h3 {
+    font-size: var(--fs-xs);
+    font-weight: 300 !important;
+  }
+
+}

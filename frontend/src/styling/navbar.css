@@ -6,6 +6,23 @@
   z-index: 9999;
 }
 
+.banner {
+  h1 {
+    font-family: Grotesk-light;
+    font-size: var(--fs-xxs);
+    font-weight: 300 !important;
+    text-align: center;
+    padding: 1.2rem;
+    background-color: #323232;
+    color: white;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.banner:hover {
+  cursor: pointer;
+}
+
 .navbar-container img {
   width: 2rem;
 }

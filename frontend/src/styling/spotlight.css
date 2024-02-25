@@ -8,16 +8,10 @@
   padding: 0 !important;
 }
 
-.spotlight,
 .spotlight-text {
   color: black;
   text-align: center;
-}
-
-.spotlight-text {
-  width: 50em;
-  color: white;
-  background-color: #1b1d1a;
+  background-color: #F5F5F6;
 }
 
 .spotlight-text h3 {

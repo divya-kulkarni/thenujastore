@@ -37,7 +37,7 @@ export const Category = () => {
           </Col>
         </Row>
       </Container>
-      <hr />
+
     </div>
   );
 };

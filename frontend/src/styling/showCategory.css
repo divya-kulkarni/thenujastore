@@ -1,0 +1,37 @@
+.product-container {
+  text-align: center;
+
+  .category-item {
+    margin: 1rem 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.category-item {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.category-item h3,
+h4 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-xs);
+  font-weight: 300 !important;
+}
+
+.category-item h4 {
+  opacity: 0.5;
+}
+
+.category-item img {
+  margin-bottom: 1rem;
+}
+
+.category-item img :hover {
+  cursor: pointer;
+}

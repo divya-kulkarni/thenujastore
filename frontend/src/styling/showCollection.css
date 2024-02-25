@@ -1,0 +1,39 @@
+.collection-item {
+  margin: 1rem 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+}
+
+.colection-item Col {
+  padding-top: 0 !important;
+}
+
+.collection {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.collection-item h1 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-sm);
+}
+
+.collection h3,
+h4 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-xs);
+  font-weight: 300 !important;
+}
+
+.collection h4 {
+  opacity: 0.5;
+}
+
+.collection img {
+  margin-bottom: 1rem;
+}
+
+.collection img :hover {
+  cursor: pointer;
+}

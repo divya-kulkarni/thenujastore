@@ -15,9 +15,8 @@ export const Hero = () => {
           <div className="overlay d-flex align-items-center justify-content-center">
             <section className="overlay-content text-center">
               <h5>
-                A CHARMING COLLECTION OF HANDMADE JEWELLERY WHERE EACH PIECE TELLS A STORY
+                A CHARMING COLLECTION OF HANDMADE JEWELLERY
               </h5>
-              <br />
               <h2>AS UNIQUE AS YOU</h2>
             </section>
           </div>

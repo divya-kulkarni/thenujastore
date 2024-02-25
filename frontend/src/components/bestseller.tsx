@@ -8,6 +8,9 @@ import b5 from "../assets/bestsellers/b5.jpg";
 import b6 from "../assets/bestsellers/b6.jpg";
 
 export const Bestsellers = () => {
+  const getNextPage = (path: string) => {
+    window.location.pathname = path;
+  };
   return (
     <div className="bestseller-container">
       <h4>CHECK OUT OUR</h4>
@@ -59,7 +62,7 @@ export const Bestsellers = () => {
           </Col>
         </Row>
       </Container>
-      <Button className="mt-3">
+      <Button className="mt-3" onClick={() => getNextPage("/products")}>
         VIEW ALL PRODUCTS
       </Button>
     </div>

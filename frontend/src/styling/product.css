@@ -1,0 +1,66 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.product Row {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.product-img {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.details {
+  padding: 1rem;
+  width: 100%;
+}
+
+.description {
+  text-align: left;
+  font-family: Grotesk-light;
+  font-size: var(--fs-xs);
+}
+
+.product h1 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-sm);
+  margin: 1rem 0;
+}
+
+.product h2 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-sm);
+  margin: 1rem 0;
+}
+
+.product h3 {
+  font-size: var(--fs-xs);
+  opacity: 0.5;
+}
+
+.product img {
+  margin: 1rem 0;
+  cursor: pointer;
+  max-height: 35rem;
+}
+
+.product img :hover {
+  cursor: pointer;
+}
+
+.product button {
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: var(--fs-xs);
+  margin: 2rem 0;
+  background-color: #6a9b78;
+  border: none !important;
+  width: 100%;
+}

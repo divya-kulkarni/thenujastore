@@ -1,0 +1,51 @@
+.cart-container {
+    height: 100vh;
+}
+
+.checkout {
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: var(--fs-xxs);
+  margin: 1.5rem 0;
+  background-color: #6a9b78;
+  border: none !important;
+  width: 100%;
+}
+
+.cart-container h1 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-md);
+  font-weight: 300 !important;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cart-container h3,
+h4 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-xs);
+  font-weight: 300 !important;
+}
+
+.cart-container h4 {
+  opacity: 0.5;
+  font-size: var(--fs-xxs);
+}
+
+.item {
+  padding: 1.5rem 0;
+}
+
+.price {
+  font-family: Grotesk-light;
+  font-size: var(--fs-xxs);
+  font-weight: 300 !important;
+  opacity: 0.5;
+}
+
+.total {
+    font-family: Grotesk-light;
+    font-size: var(--fs-sm);
+    font-weight: 300 !important;
+    text-align: right;
+}

@@ -1,0 +1,23 @@
+.collection-container h1 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-md);
+  font-weight: 300 !important;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.collection-container h3 {
+  font-family: Grotesk-light;
+  font-size: var(--fs-xs);
+  font-weight: 300 !important;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.collection-container img {
+  cursor: pointer;
+}
+
+.collection {
+    margin-top: 3rem;
+}

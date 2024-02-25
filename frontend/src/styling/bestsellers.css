@@ -48,6 +48,6 @@ h6 {
   padding: 1rem;
   font-size: var(--fs-xxs);
   margin-bottom: 1rem;
-  background-color: #6a9b78;
+  background-color: #6a9b78 !important;
   border: none !important;
 }
