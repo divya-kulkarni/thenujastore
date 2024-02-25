@@ -1,3 +1,7 @@
+.collection-container {
+  margin-top: 10rem;
+}
+
 .collection-container h1 {
   font-family: Grotesk-light;
   font-size: var(--fs-md);
@@ -19,5 +23,5 @@
 }
 
 .collection {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }

@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -6,17 +7,44 @@ import Accordion from "react-bootstrap/Accordion";
 import "../styling/navbar.css";
 import shoppingCart from "../assets/icons/cart.svg";
 import { NavbarText } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 
 export const NavBar = () => {
+  const location = useLocation();
   const getNextPage = (path: string) => {
     window.location.pathname = path;
   };
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      const handleScroll = () => {
+        const isScrolled = window.scrollY > 0;
+        if (isScrolled !== scrolled) {
+          setScrolled(isScrolled);
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    } else {
+      setScrolled(true);
+    }
+  }, [scrolled]);
   return (
     <div className="navbar-container">
       <div className="banner" onClick={() => getNextPage("/products")}>
         <h1>✨ FREE SHIPPING ON ALL ORDERS OVER $50 ✨</h1>
       </div>
-      <Navbar expand="md" className="mb-3" sticky="top">
+      <Navbar
+        expand="md"
+        sticky="top"
+        id="navbar"
+        className={scrolled ? "navbar scrolled" : "navbar"}
+      >
         <Container fluid>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
           <Navbar.Brand onClick={() => getNextPage("/")}>

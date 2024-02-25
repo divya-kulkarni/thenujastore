@@ -3,10 +3,13 @@
   align-items: center;
   justify-content: center;
   padding: 0 !important;
-  z-index: 9999;
+  z-index: 2;
+  top: 0;
+  position: fixed;
 }
 
 .banner {
+  z-index: 9999;
   h1 {
     font-family: Grotesk-light;
     font-size: var(--fs-xxs);
@@ -16,6 +19,7 @@
     background-color: #323232;
     color: white;
     letter-spacing: 0.1rem;
+    margin: 0;
   }
 }
 
@@ -27,10 +31,25 @@
   width: 2rem;
 }
 
-nav {
+.navbar {
+  text-align: center;
   margin-bottom: 0 !important;
   background-color: transparent !important;
-  --bs-body-bg: transparent !important;
+  transition: background-color 0.5s ease;
+  color: white !important;
+  --bs-navbar-brand-color: rgba(255, 255, 255, 0) !important;
+
+  .cart {
+    display: none;
+  }
+}
+
+.scrolled {
+  background-color: white !important;
+  --bs-navbar-brand-color: black !important;
+  .cart {
+    display: block;
+  }
 }
 
 .navbar-brand {

@@ -1,5 +1,7 @@
 .product-container {
+  margin-top: 10rem;
   text-align: center;
+  font-family: Grotesk-light;
 
   .category-item {
     margin: 1rem 0 !important;

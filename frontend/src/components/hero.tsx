@@ -3,8 +3,9 @@ import "../styling/hero.css";
 import gift from "../assets/hero/gift.jpg";
 import hero2 from "../assets/hero/hero2.jpg";
 import hero5 from "../assets/hero/hero5.jpg";
+import logoWhite from "../assets/logo-white.png";
 
-const interval = 60000;
+const interval = 10000;
 
 export const Hero = () => {
   return (
@@ -14,9 +15,8 @@ export const Hero = () => {
           <img src={hero2} alt="" className="slide" />
           <div className="overlay d-flex align-items-center justify-content-center">
             <section className="overlay-content text-center">
-              <h5>
-                A CHARMING COLLECTION OF HANDMADE JEWELLERY
-              </h5>
+              <img src={logoWhite} alt="thenujastore" className="logo" />
+              <h5>A CHARMING COLLECTION OF HANDMADE JEWELLERY</h5>
               <h2>AS UNIQUE AS YOU</h2>
             </section>
           </div>
