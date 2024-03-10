@@ -1,0 +1,97 @@
+.testimonials {
+  background-color: #6a9b78;
+  color: white;
+}
+
+.testimonial-container {
+  margin: 4rem 1rem !important;
+  overflow: hidden !important;
+}
+
+.testimonials-title {
+  font-size: var(--fs-md);
+  margin-bottom: 2rem;
+}
+
+.testimonial {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 20px;
+  position: relative;
+  font-size: var(--fs-xs);
+  background-color: #ffffff;
+  transition: 0.5s ease-in-out;
+  color: black;
+}
+
+.quote,
+.name {
+  margin: 2rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.subText {
+  font-size: var(--fs-xs) !important;
+}
+
+.wave {
+  width: 100%;
+  aspect-ratio: 900/150;
+}
+
+.quote-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  background-color: transparent;
+}
+
+.quote-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  background-color: transparent;
+}
+
+.quote-btn img {
+  width: 3rem;
+  aspect-ratio: 1/1;
+  font-size: var(--fs-xxs);
+  margin-bottom: 1rem;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.quote-btn,
+.quote-btn:hover {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+@media screen and (min-width: 45rem) {
+  .testimonial-container {
+    margin: 10rem 10rem !important;
+    /* height: 35rem; */
+  }
+
+  .quote {
+    font-size: var(--fs-xs) !important;
+  }
+
+  .testimonial {
+    max-width: 70%;
+    margin: 2rem;
+    max-width: 90%;
+    font-size: var(--fs-md);
+  }
+}
