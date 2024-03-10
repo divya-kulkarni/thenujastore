@@ -1,0 +1,68 @@
+.form-container {
+  width: 100%;
+  margin: 5rem auto;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #6a9b78;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #6a9b78;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 2rem 0;
+}
+
+.submit-button:hover {
+  background-color: #598a69;
+}
+
+.error-message {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.PaymentElement {
+  /* margin: 1rem 0;     */
+  overflow: hidden;
+  height: 50vh !important;
+}
+
+.payment {
+  height: 100% !important;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 45rem) {
+  .form-container {
+    max-width: 50%;
+  }
+
+  .submit-button {
+    font-size: var(--fs-xs) !important;
+  }
+
+  h5 {
+    font-size: var(--fs-xs) !important;
+  }
+}

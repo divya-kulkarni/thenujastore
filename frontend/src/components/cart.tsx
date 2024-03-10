@@ -1,75 +1,153 @@
 import { Row, Col, Container, Button } from "react-bootstrap";
-import "../styling/cart.css";
+import { useContext, useEffect, useState } from "react";
 import { Footer } from "./footer";
 import { NavBar } from "./navbar";
-import necklace from "../assets/necklace-thumbnail.jpg";
-import bracelet from "../assets/bracelet-thumbnail.jpg";
-import earring from "../assets/earring-thumbnail.jpg";
-import { Quantifier } from "./quantifier";
+import { CartContext } from "../components/cartContext";
+import { SuccessModal } from "./successModal";
+import "../styling/cart.css";
+import "../styling/quantifier.css";
+import empty from "../assets/empty-cart.png";
+import { useLocation } from "react-router-dom";
+import { Suggestions } from "./suggestions";
 
 export const Cart = () => {
-  var total = 0;
+  const getNextPage = (path: string) => {
+    window.location.pathname = path;
+  };
+  const { cartItems, addToCart, removeFromCart, clearCart, getCartTotal } =
+    useContext(CartContext);
+  const location = useLocation();
+  const [paymentSuccess, setPaymentSuccess] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const redirectResult = searchParams.get("redirect_status");
+    if (redirectResult === "succeeded") {
+      setPaymentSuccess(true);
+      clearCart();
+      setModalShow(true);
+    }
+  }, [location.search]);
   return (
     <>
       <NavBar />
       <div className="cart-container">
-        <h1>CART</h1>
+        {cartItems.length > 0 ? (
+          <>
+            <h1>CART</h1>
+            <Row className="cart-title">
+              <Col md={7}>
+                <h4 style={{ textAlign: "left", paddingLeft: "2rem" }}>
+                  PRODUCT
+                </h4>
+              </Col>
+              <Col md={3}>
+                <h4
+                  style={{
+                    textAlign: "left",
+                  }}
+                >
+                  QUANTITY
+                </h4>
+              </Col>
+              <Col md={2}>
+                <h4
+                  style={{
+                    textAlign: "left",
+                  }}
+                >
+                  TOTAL
+                </h4>
+              </Col>
+            </Row>
+            <hr />
+          </>
+        ) : null}
         <Container>
-          {cartData.map(
-            (item) => (
-              (total += item.price*item.quantity),
-              (
-                <Row className="item">
-                  <Col xs={4} md={4}>
-                    <img
-                      src={item.image}
-                      alt={item.image}
-                      className="img-fluid"
+          {cartItems.map((item: any) => (
+            <>
+              <Row className="item">
+                <Col xs={4} md={7}>
+                  <div className="cart-item">
+                    <div className="cart-img">
+                      <img
+                        src={item.image}
+                        alt={item.image}
+                        className="img-fluid"
+                      />
+                    </div>
+                    <div className="cart-details">
+                      <h4 style={{ opacity: "1" }}>{item.name}</h4>
+                      <h4>{item.collection}</h4>
+                      <p className="price">${item.price}</p>
+                    </div>
+                  </div>
+                </Col>
+                <Col xs={8} md={3}>
+                  <div className="quantifier">
+                    <input
+                      type="button"
+                      value="-"
+                      className="buttonMinus"
+                      onClick={() => removeFromCart(item)}
                     />
-                  </Col>
-                  <Col xs={8} md={8}>
-                    <h3>{item.name}</h3>
-                    <h4>{item.collection}</h4>
-                    <p className="price">${item.price}</p>
-                    <Quantifier />
-                  </Col>
-                </Row>
-              )
-            )
+                    <input
+                      type="number"
+                      max=""
+                      className="quantityField"
+                      value={item.quantity}
+                    />
+                    <input
+                      type="button"
+                      value="+"
+                      className="buttonPlus"
+                      onClick={() => addToCart(item)}
+                    />
+                  </div>
+                </Col>
+                <Col md={2}>
+                  <p style={{ textAlign: "left" }}>
+                    ${item.price * item.quantity}
+                  </p>
+                </Col>
+              </Row>
+              <hr />
+            </>
+          ))}
+          {paymentSuccess ? (
+            <SuccessModal show={modalShow} onHide={() => setModalShow(false)} />
+          ) : null}
+          {cartItems.length > 0 ? (
+            <div className="flex flex-col justify-between items-center">
+              <Row className="cart-title">
+                <Col md={7}></Col>
+                <Col md={3}></Col>
+                <Col md={2}>
+                  <h4 style={{ textAlign: "left" }}>${getCartTotal()}</h4>
+                </Col>
+              </Row>
+              <Row>
+                <Button
+                  className="checkout"
+                  onClick={() => getNextPage("/checkout")}
+                >
+                  CHECKOUT
+                </Button>
+              </Row>
+            </div>
+          ) : (
+            <div className="empty-cart">
+              <img src={empty} className="img-fluid" alt="empty-cart" />
+              <h2>YOUR CART LOOKS LIGHTER THAN A FEATHER!</h2>
+              <Button className="mt-3" onClick={() => getNextPage("/products")}>
+                TREAT YOURSELF
+              </Button>
+            </div>
           )}
-          <hr />
-          <p className="total">Total: ${total}</p>
-          <Button className="checkout">CHECKOUT</Button>
         </Container>
       </div>
+      <Suggestions />
       <Footer />
     </>
   );
 };
-
-const cartData = [
-  {
-    id: 1,
-    name: "Forget-Me-Not Necklace",
-    collection: "Forget-Me-Not",
-    price: 50,
-    quantity: 1,
-    image: necklace,
-  },
-  {
-    id: 2,
-    name: "Butterfly Earrings",
-    collection: "Pastel Dreams",
-    price: 30,
-    quantity: 2,
-    image: earring,
-  },
-  {
-    id: 3,
-    name: "Forget-Me-Not Bracelet",
-    collection: "Forget-Me-Not",
-    price: 40,
-    quantity: 1,
-    image: bracelet,
-  },
-];
