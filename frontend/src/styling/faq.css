@@ -1,0 +1,13 @@
+.faq {
+  margin: 13rem;
+  font-family: Grotesk-light;
+}
+
+.accordion-button {
+  font-size: var(--fs-xs) !important;
+}
+
+.accordion-header {
+  font-size: var(--fs-xs);
+  font-weight: 300 !important;
+}
