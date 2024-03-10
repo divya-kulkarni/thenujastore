@@ -3,23 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: Grotesk-light !important;
 
   --fs-xl: clamp(7rem, 10vw + 1rem, 15rem);
-  --fs-l: clamp(3rem, 4rem, 6rem);
+  --fs-l: clamp(2rem, 3.5rem, 6rem);
   --fs-md: clamp(1.2rem, 1.7rem, 3rem);
   --fs-sm: clamp(0.8rem, 1.3rem, 2rem);
   --fs-xs: clamp(0.5rem, 1rem, 5rem);
   --fs-xxs: clamp(0.5rem, 0.8rem, 3rem);
-}
-
-@media only screen and (min-width: 55rem) {
-  body {
-    --fs-xl: clamp(7rem, 15vw + 1rem, 30rem);
-    --fs-l: clamp(10rem, 20rem, 25rem);
-    --fs-md: clamp(3rem, 5rem, 7rem);
-    --fs-sm: clamp(0.8rem, 1.1rem, 2rem);
-    --fs-xs: clamp(0.5rem, 0.7rem, 2rem);
-  }
 }
 
 html {
@@ -56,4 +47,29 @@ Col {
 @font-face {
   font-family: "Grotesk-light";
   src: url("./font/DINNeuzeitGroteskLT-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cheri-light";
+  src: url("./font/cheri-light.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Cheri-bold";
+  src: url("./font/cheri-bold.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Emily";
+  src: url("./font/emily.ttf") format("truetype");
+}
+
+@media (min-width: 45rem) {
+  * {
+    --fs-xl: clamp(15rem, 18rem, 30rem);
+    --fs-l: clamp(8rem, 10rem, 25rem);
+    --fs-md: clamp(3rem, 4rem, 7rem);
+    --fs-sm: clamp(1rem, 2rem, 4rem);
+    --fs-xs: clamp(0.5rem, 1rem, 5rem);
+  }
 }
