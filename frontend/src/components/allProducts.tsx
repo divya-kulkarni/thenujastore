@@ -3,7 +3,11 @@ import fairytale from "../assets/categories/necklace-thumbnail.jpg";
 import pastel from "../assets/categories/pastel-dreams.jpg";
 import n1 from "../assets/necklace1.jpg";
 import n2 from "../assets/f8.jpg";
-import n3 from "../assets/necklace3.jpg";
+import n3 from "../assets/necklace2.jpg";
+import b1 from "../assets/bestsellers/b1.jpg";
+import b3 from "../assets/bestsellers/b3.jpg";
+import b5 from "../assets/bestsellers/b5.jpg";
+import b6 from "../assets/bestsellers/b6.jpg";
 import "../styling/showCategory.css";
 import { Row, Col, Container } from "react-bootstrap";
 import { NavBar } from "./navbar";
@@ -34,88 +38,89 @@ export const AllProducts = () => {
   );
 };
 
-const productData = [
+export const productData = [
   {
     id: 1,
-    name: "Forget-Me-Not Necklace",
+    name: "FORGET-ME-NOT NECKLACE",
     collection: "Forget-Me-Not",
-    price: "$50",
+    price: 50,
     image: n1,
     path: "forget-me-not-necklace",
     category: "necklace",
   },
   {
     id: 2,
-    name: "Forget-Me-Not Bracelet",
+    name: "FORGET-ME-NOT BRACELET",
     collection: "Forget-Me-Not",
-    price: "$30",
+    price: 30,
     image: fairytale,
     path: "forget-me-not-bracelet",
     category: "bracelet",
   },
   {
     id: 3,
-    name: "Forget-Me-Not Earrings",
-    collection: "Forget-Me-Not",
-    price: "$40",
-    image: fairytale,
-    path: "forget-me-not-earrings",
-    category: "earrings",
-  },
-
-  {
-    id: 1,
-    name: "Rosebud Necklace",
+    name: "ROSEBUD NECKLACE",
     collection: "Rosebud",
-    price: "$50",
+    price: 50,
     image: n2,
     path: "rosebud-necklace",
     category: "necklace",
   },
   {
-    id: 2,
-    name: "Rosebud Bracelet",
+    id: 4,
+    name: "ROSEBUD BRACELET",
     collection: "Rosebud",
-    price: "$30",
+    price: 30,
     image: rosebud,
     path: "rosebud-bracelet",
     category: "bracelet",
   },
   {
-    id: 3,
-    name: "Rosebud Earrings",
-    collection: "Rosebud",
-    price: "$40",
-    image: rosebud,
-    path: "rosebud-earrings",
+    id: 5,
+    name: "ROSE DROP EARRINGS",
+    price: 25,
+    image: b5,
+    path: "rose-drop-earrings",
     category: "earrings",
   },
-
   {
-    id: 1,
-    name: "Pastel Dreams Necklace",
+    id: 6,
+    name: "PASTEL DREAMS EARRINGS",
     collection: "Pastel Dreams",
-    price: "$50",
-    image: n3,
-    path: "pastel-dreams-necklace",
-    category: "necklace",
-  },
-  {
-    id: 2,
-    name: "Pastel Dreams Bracelet",
-    collection: "Pastel Dreams",
-    price: "$30",
-    image: pastel,
-    path: "pastel-dreams-bracelet",
-    category: "bracelet",
-  },
-  {
-    id: 3,
-    name: "Pastel Dreams Earrings",
-    collection: "Pastel Dreams",
-    price: "$40",
+    price: 40,
     image: pastel,
     path: "pastel-dreams-earrings",
     category: "earrings",
+  },
+  {
+    id: 7,
+    name: "DISCO QUEEN EARRINGS",
+    price: 15,
+    image: b1,
+    path: "disco-queen-earrings",
+    category: "earrings",
+  },
+  {
+    id: 8,
+    name: "LAVENDER HAZE HOOPS",
+    price: 25,
+    image: b3,
+    path: "lavender-haze-hoops",
+  },
+  {
+    id: 9,
+    name: "GOLDEN HOUR EARRINGS",
+    price: 25,
+    image: b6,
+    path: "golden-hour-earrings",
+    category: "earrings",
+  },
+  {
+    id: 10,
+    name: "FORGET-ME-NOT CIRCULAR NECKLACE",
+    price: 15,
+    image: n3,
+    path: "forget-me-not-necklace-circular",
+    category: "necklace",
   },
 ];

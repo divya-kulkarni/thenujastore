@@ -6,6 +6,7 @@ import b3 from "../assets/bestsellers/b3.jpg";
 import b4 from "../assets/bestsellers/b4.jpg";
 import b5 from "../assets/bestsellers/b5.jpg";
 import b6 from "../assets/bestsellers/b6.jpg";
+import n3 from "../assets/necklace2.jpg";
 
 export const Bestsellers = () => {
   const getNextPage = (path: string) => {
@@ -14,52 +15,27 @@ export const Bestsellers = () => {
   return (
     <div className="bestseller-container">
       <h4>CHECK OUT OUR</h4>
-      <br />
-      <h2>BESTSELLERS</h2>
+      <h2>Bestsellers</h2>
       <Container fluid>
         <Row>
-          <Col xs={6} md={3}>
-            <div className="bestseller">
-              <img src={b1} alt="rings" className="img-fluid" />
-              <h5>DISCO QUEEN EARRINGS</h5>
-              <h6>$15</h6>
-            </div>
-          </Col>
-          <Col xs={6} sm={6} md={3}>
-            <div className="bestseller">
-              <img src={b2} alt="necklace" className="img-fluid" />
-              <h5>FORGET ME NOT NECKLACE</h5>
-              <h6>$25</h6>
-            </div>
-          </Col>
-          <Col xs={6} sm={6} md={3}>
-            <div className="bestseller">
-              <img src={b3} alt="earrings" className="img-fluid" />
-              <h5>LAVENDER HAZE HOOPS</h5>
-              <h6>$25</h6>
-            </div>
-          </Col>
-          <Col xs={6} sm={6} md={3}>
-            <div className="bestseller">
-              <img src={b4} alt="bracelets" className="img-fluid" />
-              <h5>PASTEL BUTTERFLY EARRINGS</h5>
-              <h6>$25</h6>
-            </div>
-          </Col>
-          <Col xs={6} sm={6} md={3}>
-            <div className="bestseller">
-              <img src={b5} alt="bracelets" className="img-fluid" />
-              <h5>ROSE DROP EARRINGS</h5>
-              <h6>$25</h6>
-            </div>
-          </Col>
-          <Col xs={6} sm={6} md={3}>
-            <div className="bestseller">
-              <img src={b6} alt="bracelets" className="img-fluid" />
-              <h5>GOLDEN HOUR EARRINGS</h5>
-              <h6>$25</h6>
-            </div>
-          </Col>
+          {bestsellerData.map((product) => {
+            return (
+              <Col xs={6} md={3} xxl={3}>
+                <div className="bestseller">
+                  <div className="bestseller-img">
+                    <img
+                      src={product.image}
+                      alt=""
+                      className="img-fluid"
+                      onClick={() => getNextPage("/products/" + product.path)}
+                    />
+                  </div>
+                  <h5>{product.name}</h5>
+                  <h6>${product.price}</h6>
+                </div>
+              </Col>
+            );
+          })}
         </Row>
       </Container>
       <Button className="mt-3" onClick={() => getNextPage("/products")}>
@@ -68,3 +44,64 @@ export const Bestsellers = () => {
     </div>
   );
 };
+
+const bestsellerData = [
+  {
+    id: 1,
+    name: "DISCO QUEEN EARRINGS",
+    price: 15,
+    image: b1,
+    path: "disco-queen-earrings",
+  },
+  {
+    id: 2,
+    name: "FORGET ME NOT NECKLACE",
+    price: 25,
+    image: b2,
+    path: "forget-me-not-necklace",
+  },
+  {
+    id: 3,
+    name: "LAVENDER HAZE HOOPS",
+    price: 25,
+    image: b3,
+    path: "lavender-haze-hoops",
+  },
+  {
+    id: 4,
+    name: "PASTEL BUTTERFLY EARRINGS",
+    price: 25,
+    image: b4,
+    path: "pastel-butterfly-earrings",
+  },
+  {
+    id: 5,
+    name: "ROSE DROP EARRINGS",
+    price: 25,
+    image: b5,
+    path: "rose-drop-earrings",
+  },
+  {
+    id: 6,
+    name: "GOLDEN HOUR EARRINGS",
+    price: 25,
+    image: b6,
+    path: "golden-hour-earrings",
+  },
+  {
+    id: 9,
+    name: "GOLDEN HOUR EARRINGS",
+    price: 25,
+    image: b6,
+    path: "golden-hour-earrings",
+    category: "earrings",
+  },
+  {
+    id: 10,
+    name: "FORGET-ME-NOT CIRCULAR NECKLACE",
+    price: 15,
+    image: n3,
+    path: "forget-me-not-necklace-circular",
+    category: "necklace",
+  },
+];

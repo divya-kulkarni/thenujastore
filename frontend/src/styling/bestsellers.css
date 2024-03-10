@@ -1,15 +1,8 @@
 .bestseller-container {
-  margin: 3rem 0.2rem !important;
+  margin: 3rem 0;
   color: black;
   overflow: hidden !important;
   text-align: center;
-}
-
-.bestseller-container Col {
-  border-bottom: 1px solid #0000 !important;
-  margin: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 }
 
 .bestseller-container h4 {
@@ -39,8 +32,12 @@ h6 {
 }
 
 .bestseller img {
-  margin-bottom: 1rem;
   cursor: pointer;
+}
+
+.bestseller-img {
+  margin-bottom: 1rem;
+  overflow: hidden;
 }
 
 .bestseller-container button {
@@ -48,6 +45,42 @@ h6 {
   padding: 1rem;
   font-size: var(--fs-xxs);
   margin-bottom: 1rem;
-  background-color: #A9C1B7 !important;
+  background-color: #6a9b78 !important;
   border: none !important;
+}
+
+@media (min-width: 55rem) {
+  .bestseller {
+    padding: 3rem 1rem !important;
+    .bestseller-img {
+      width: 100% !important;
+    }
+
+    img {
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    img:hover {
+      scale: 1.1;
+      transition: 1s ease-in-out;
+      opacity: 1;
+    }
+  }
+
+  .bestseller-container {
+    margin: 5rem 1.5rem !important;
+    button:hover {
+      background-color: black !important;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+@media screen and (min-width: 100rem) {
+  .bestseller-img {
+    width: 40rem;
+  }
 }

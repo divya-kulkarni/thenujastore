@@ -5,63 +5,87 @@
   justify-content: center;
   border-radius: 4px;
   transition: 0.3s;
-  margin-top: 8rem;
+  margin-top: 5rem;
+  text-align: center;
+
+  .product-img {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100%;
+    aspect-ratio: 1/1 !important;
+    overflow: hidden !important;
+  }
+
+  .description {
+    font-size: var(--fs-xs);
+  }
+
+  h1 {
+    font-size: var(--fs-sm);
+    margin: 1rem 0;
+  }
+
+  h2 {
+    font-size: var(--fs-xs);
+    margin: 1rem 0;
+  }
+
+  h3 {
+    font-size: var(--fs-xs);
+    opacity: 0.5;
+  }
+
+  img {
+    margin: 1rem 0;
+    cursor: pointer;
+    max-height: 35rem;
+  }
+
+  button {
+    border-radius: 3px;
+    padding: 0.8rem;
+    font-size: var(--fs-xs);
+    margin: 2rem 0;
+    background-color: #6a9b78;
+    border: none !important;
+    width: 100%;
+  }
 }
 
-.product Row {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
+@media screen and (min-width: 45rem) {
+  .product {
+    margin: 10rem 0;
+  }
 
-.product-img {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
+  .product-details {
+    margin: 2rem 0;
+    text-align: left;
+    width: 25rem;
+  }
+  .product-img {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100%;
+    aspect-ratio: 1/1 !important;
+    overflow: hidden !important;
+  }
 
-.details {
-  padding: 1rem;
-  width: 100%;
-}
+  h1 {
+    font-size: var(--fs-xs) !important;
+  }
 
-.description {
-  text-align: left;
-  font-family: Grotesk-light;
-  font-size: var(--fs-xs);
-}
+  h2 {
+    margin: 2rem 0 !important;
+  }
 
-.product h1 {
-  font-family: Grotesk-light;
-  font-size: var(--fs-sm);
-  margin: 1rem 0;
-}
+  p {
+    font-size: var(--fs-xxs) !important;
+  }
 
-.product h2 {
-  font-family: Grotesk-light;
-  font-size: var(--fs-sm);
-  margin: 1rem 0;
-}
-
-.product h3 {
-  font-size: var(--fs-xs);
-  opacity: 0.5;
-}
-
-.product img {
-  margin: 1rem 0;
-  cursor: pointer;
-  max-height: 35rem;
-}
-
-.product img :hover {
-  cursor: pointer;
-}
-
-.product button {
-  border-radius: 4px;
-  padding: 1rem;
-  font-size: var(--fs-xs);
-  margin: 2rem 0;
-  background-color: #6a9b78;
-  border: none !important;
-  width: 100%;
+  button {
+    font-size: var(--fs-xxs) !important;
+  }
+  button:hover {
+    background-color: black !important;
+  }
 }

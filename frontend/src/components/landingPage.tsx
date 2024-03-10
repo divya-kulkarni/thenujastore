@@ -4,8 +4,8 @@ import { Category } from "./category";
 import { Footer } from "./footer";
 import { Hero } from "./hero";
 import { NavBar } from "./navbar";
-import { Social } from "./social";
 import { Spotlight } from "./spotlight";
+import { Testimonials } from "./testimonials";
 
 export const LandingPage = () => {
   return (
@@ -14,8 +14,8 @@ export const LandingPage = () => {
       <Hero />
       <Bestsellers />
       <Spotlight />
+      <Testimonials />
       <Category />
-      {/* <Social /> */}
       <Footer />
     </div>
   );
