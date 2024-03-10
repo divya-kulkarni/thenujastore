@@ -1,50 +1,107 @@
 .hero {
   z-index: 1;
+  overflow-y: hidden;
+
+  .hero-video {
+    overflow: hidden !important;
+    video {
+      overflow: hidden !important;
+    }
+  }
 
   .logo {
     max-height: 12rem;
   }
+  .slide {
+    object-fit: cover;
+    height: 50em;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: hidden !important;
+  }
+  .overlay-content {
+    position: absolute;
+    color: white;
+    width: 100%;
+    
+  }
+  .overlay button {
+    border-radius: 4px;
+    padding: 1rem;
+    font-size: var(--fs-xxs);
+    margin-bottom: 1rem;
+    background-color: #6a9b78;
+    border: none !important;
+  }
+
+  h2 {
+    font-size: var(--fs-l);
+    letter-spacing: 0.1rem;
+  }
+  h5 {
+    font-size: var(--fs-xxs) !important;
+    letter-spacing: 0.1rem;
+  }
+
+  .statement {
+    left: 5%;
+  }
 }
 
-.slide {
-  object-fit: cover;
-  height: 50em;
+@media screen and (min-width: 45rem) {
+  .slide {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .moveUp {
+    top: -70rem !important;
+  }
+  .statement {
+    left: 2% !important;
+  }
+
+  .hero {
+    button:hover {
+      background-color: black !important;
+      transition: 0.3s ease-in-out;
+    }
+
+    .carousel-content {
+      overflow: hidden !important;
+      max-height: 100vh;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .overlay-content {
+      overflow: hidden !important;
+    }
+
+    .overlay {
+      overflow-y: hidden;
+      h2 {
+        margin: 1rem 0 !important;
+        font-size: var(--fs-l);
+        font-weight: 700;
+      }
+
+      h5 {
+        font-size: var(--fs-xs) !important;
+      }
+    }
+  }
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50em;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.overlay-content {
-  position: absolute;
-  color: white;
-  width: 100%;
-}
-
-.overlay button {
-  border-radius: 4px;
-  padding: 1rem;
-  font-size: var(--fs-xxs);
-  margin-bottom: 1rem;
-  background-color: #A9C1B7;
-  border: none !important;
-}
-
-.hero h2 {
-  font-family: Grotesk-light;
-  font-size: var(--fs-md);
-  font-weight: 300 !important;
-  letter-spacing: 0.1rem;
-}
-
-.hero h5 {
-  font-family: Grotesk-light;
-  font-size: var(--fs-xs) !important;
-  font-weight: 300 !important;
-  letter-spacing: 0.1rem;
+@media (min-width: 70rem) {
+  .moveUp {
+    top: -50rem !important;
+  }
 }

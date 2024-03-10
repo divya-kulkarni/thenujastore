@@ -1,5 +1,4 @@
 .footer {
-  border: 1px solid #0000 !important;
   justify-content: center;
   background-color: #f5f5f6;
   bottom: 0;
@@ -13,16 +12,41 @@
     text-align: left !important;
   }
 
-  h3, p {
+  h3,
+  p {
     font-family: Grotesk-light;
     font-size: var(--fs-xs);
     opacity: 0.5;
     text-align: left !important;
   }
+
+  .details {
+    margin: 1rem 0;
+  }
+
+  .links {
+    padding: 0 1rem;
+  }
+
+  .copy {
+    p {
+      padding-top: 1.5rem;
+      text-align: center !important;
+    }
+  }
 }
 
-.copy p {
-  padding-top: 1.5rem;
-  background-color: #f5f5f6;
-  text-align: center !important;
+@media screen and (min-width: 45rem) {
+  .footer {
+    h2 {
+      font-size: var(--fs-xs) !important;
+      cursor: pointer;
+    }
+
+    h3,
+    p {
+      font-size: var(--fs-xs);
+      cursor: pointer;
+    }
+  }
 }
