@@ -1,7 +1,6 @@
 .quantifier {
   display: flex;
   align-items: center;
-  padding: 1rem 0;
 
   input {
     order: 1;
@@ -17,6 +16,7 @@
     display: inline-block;
     font-size: 13px;
     resize: vertical;
+    opacity: 0.5;
   }
 
   input[type="button"] {
@@ -30,23 +30,30 @@
   }
 
   input[type="button"] {
-    background-color: #eeeeee;
-    border: none;
+    background-color: transparent;
     width: 30px;
     transition: all 300ms ease;
-    font-weight: bold;
     font-size: 1.2em;
     height: 30px;
     padding: 0;
     position: relative;
 
     &:hover {
-      background-color: #d5d9d9;
+      background-color: #eeeeee;
     }
   }
 
   input[type="number"] {
     -moz-appearance: textfield;
     -webkit-appearance: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  .buttonMinus {
+    border-right: none;
+  }
+  .buttonPlus {
+    border-left: none;
   }
 }

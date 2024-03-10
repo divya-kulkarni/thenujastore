@@ -15,8 +15,9 @@ export const Spotlight = () => {
           </div>
           <div className="spotlight-text justify-items-right align-items-right">
             <h5>SPOTLIGHT ON</h5>
-            <h3>Forget-Me-Not Necklace</h3>
-            <Button onClick={() => getNextPage("/products")}>SHOP NOW</Button>
+            <h3>FORGET-ME-NOT NECKLACE</h3>
+            <h5>In medieval europe, forget-me-nots were given as tokens of affection between lovers. <br />they were believed to have the power to keep love alive and strengthen the bond between couples.</h5>
+            <Button onClick={() => getNextPage("/products/forget-me-not-necklace")}>CHECK IT OUT</Button>
           </div>
         </Row>
       </Container>
