@@ -1,10 +1,10 @@
 .product-container {
-  margin-top: 10rem;
+  margin-top: 7rem;
   text-align: center;
   font-family: Grotesk-light;
 
   .category-item {
-    margin: 1rem 0 !important;
+    margin: 3rem 1.5rem !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -36,4 +36,22 @@ h4 {
 
 .category-item img :hover {
   cursor: pointer;
+}
+
+@media only screen and (min-width: 45rem) {
+  .product-container {
+    margin-top: 10rem;
+    text-align: center;
+
+    img {
+      margin-bottom: 2rem;
+    }
+    img:hover {
+      scale: 1.1;
+      transition: 0.3s ease-in-out;
+    }
+    h2 {
+      font-size: var(--fs-sm);
+    }
+  }
 }

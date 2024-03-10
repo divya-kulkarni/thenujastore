@@ -11,50 +11,59 @@ export const Category = () => {
   };
   return (
     <div className="category-container">
-      <h2>SHOP BY CATEGORY</h2>
+      <h4>VIEW OUR</h4>
+      <h2>Popular Categories</h2>
       <Container fluid>
         <Row>
-          <Col xs={6} md={3}>
+          <Col xs={12} md={6} xxl={3}>
             <div className="category">
-              <img
-                src={rings}
-                alt="rings"
-                className="img-fluid"
-                onClick={() => getNextPage("/rings")}
-              />
+              <div className="category-img">
+                <img
+                  src={rings}
+                  alt="rings"
+                  className="img-fluid"
+                  onClick={() => getNextPage("/rings")}
+                />
+              </div>
               <h3>RINGS</h3>
             </div>
           </Col>
-          <Col xs={6} sm={6} md={3}>
+          <Col xs={12} md={6} xxl={3}>
             <div className="category">
-              <img
-                src={necklace}
-                alt="necklace"
-                className="img-fluid"
-                onClick={() => getNextPage("/necklace")}
-              />
+              <div className="category-img">
+                <img
+                  src={necklace}
+                  alt="necklace"
+                  className="img-fluid"
+                  onClick={() => getNextPage("/necklace")}
+                />
+              </div>
               <h3>NECKLACES</h3>
             </div>
           </Col>
-          <Col xs={6} sm={6} md={3}>
+          <Col xs={12} md={6} xxl={3}>
             <div className="category">
-              <img
-                src={earrings}
-                alt="earrings"
-                className="img-fluid"
-                onClick={() => getNextPage("/earring")}
-              />
+              <div className="category-img">
+                <img
+                  src={earrings}
+                  alt="earrings"
+                  className="img-fluid"
+                  onClick={() => getNextPage("/earring")}
+                />
+              </div>
               <h3>EARRINGS</h3>
             </div>
           </Col>
-          <Col xs={6} sm={6} md={3}>
+          <Col xs={12} md={6} xxl={3}>
             <div className="category">
-              <img
-                src={bracelets}
-                alt="bracelets"
-                className="img-fluid"
-                onClick={() => getNextPage("/bracelet")}
-              />
+              <div className="category-img">
+                <img
+                  src={bracelets}
+                  alt="bracelets"
+                  className="img-fluid"
+                  onClick={() => getNextPage("/bracelet")}
+                />
+              </div>
               <h3>BRACELETS</h3>
             </div>
           </Col>

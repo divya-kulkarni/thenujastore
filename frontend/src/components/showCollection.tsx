@@ -15,7 +15,7 @@ export const ShowCollection = () => {
     title = "FAIRYTALE";
     collectionData = fairytaleData;
   } else if (location === "/collections/rosebud") {
-    title = "BLOOMING ROSEBUDS";
+    title = "ROSEBUD";
     collectionData = rosebudData;
   } else if (location === "/collections/pastel") {
     title = "PASTEL DREAMS";
@@ -36,8 +36,12 @@ export const ShowCollection = () => {
               return (
                 <Col xs={6} lg={3}>
                   <div className="collection">
-                    <img src={item.image} alt="rings" className="img-fluid" 
-                    onClick={() => getNextPage(item.path)}/>
+                    <img
+                      src={item.image}
+                      alt="rings"
+                      className="img-fluid"
+                      onClick={() => getNextPage(item.path)}
+                    />
                     <h3>{item.name}</h3>
                     <h4>{item.price}</h4>
                   </div>
@@ -57,7 +61,7 @@ const fairytaleData = [
     id: 1,
     name: "Forget-Me-Not Necklace",
     collection: "Forget-Me-Not",
-    price: "$50",
+    price: 50,
     image: fairytale,
     path: "forget-me-not-necklace",
   },
@@ -65,7 +69,7 @@ const fairytaleData = [
     id: 2,
     name: "Forget-Me-Not Bracelet",
     collection: "Forget-Me-Not",
-    price: "$30",
+    price: 30,
     image: fairytale,
     path: "forget-me-not-bracelet",
   },
@@ -73,7 +77,7 @@ const fairytaleData = [
     id: 3,
     name: "Forget-Me-Not Earrings",
     collection: "Forget-Me-Not",
-    price: "$40",
+    price: 40,
     image: fairytale,
     path: "forget-me-not-earrings",
   },
@@ -84,7 +88,7 @@ const rosebudData = [
     id: 1,
     name: "Rosebud Necklace",
     collection: "Rosebud",
-    price: "$50",
+    price: 50,
     image: rosebud,
     path: "rosebud-necklace",
   },
@@ -92,7 +96,7 @@ const rosebudData = [
     id: 2,
     name: "Rosebud Bracelet",
     collection: "Rosebud",
-    price: "$30",
+    price: 30,
     image: rosebud,
     path: "rosebud-bracelet",
   },
@@ -100,7 +104,7 @@ const rosebudData = [
     id: 3,
     name: "Rosebud Earrings",
     collection: "Rosebud",
-    price: "$40",
+    price: 40,
     image: rosebud,
     path: "rosebud-earrings",
   },
@@ -111,7 +115,7 @@ const pastelData = [
     id: 1,
     name: "Pastel Dreams Necklace",
     collection: "Pastel Dreams",
-    price: "$50",
+    price: 50,
     image: pastel,
     path: "pastel-dreams-necklace",
   },
@@ -119,7 +123,7 @@ const pastelData = [
     id: 2,
     name: "Pastel Dreams Bracelet",
     collection: "Pastel Dreams",
-    price: "$30",
+    price: 30,
     image: pastel,
     path: "pastel-dreams-bracelet",
   },
@@ -127,7 +131,7 @@ const pastelData = [
     id: 3,
     name: "Pastel Dreams Earrings",
     collection: "Pastel Dreams",
-    price: "$40",
+    price: 40,
     image: pastel,
     path: "pastel-dreams-earrings",
   },

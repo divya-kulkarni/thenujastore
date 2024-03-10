@@ -1,5 +1,5 @@
 .category-container {
-  margin: 3rem 0.2rem !important;
+  margin: 3rem 0 !important;
   color: black;
   overflow: hidden !important;
   text-align: center;
@@ -11,14 +11,15 @@
 }
 
 .category-container h3 {
-  font-family: Grotesk-light;
   font-size: var(--fs-xxs);
   font-weight: 300 !important;
-  margin-top: 1rem;
+}
+
+.category-container h4 {
+  font-size: var(--fs-xxs);
 }
 
 .category-container h2 {
-  font-family: Grotesk-light;
   font-size: var(--fs-sm);
 }
 
@@ -28,4 +29,43 @@
 
 .category img {
   cursor: pointer;
+}
+
+.moveLeft {
+  transform: translateX(-25rem);
+}
+
+@media screen and (min-width: 45rem) {
+  .category {
+    padding: 3rem 0.2rem !important;
+    img {
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+  }
+  .bestseller-img {
+    width: 100% !important;
+    aspect-ratio: 1/1;
+    overflow: hidden !important;
+  }
+
+  .category-container {
+    margin: 5rem 1rem !important;
+  }
+
+  .moveUp {
+    transform: translateY(-45rem);
+  }
+
+  .moveLeft {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .moveUp {
+    transform: translateY(-35%);
+  }
 }
