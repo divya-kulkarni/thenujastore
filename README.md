@@ -48,7 +48,7 @@ Along the way, while building everything, I took notes on what I've learned so I
 
 Each part of this project helped me understand more about building apps, managing complex information, and improving user experience. It was more than just making a website - it was about solving problems, learning new things, and improving my skills for future work.
 
-## What can be improved
+## 💡 What can be improved
 
 - Add a dynamic Instagram post section, urging users to join the brand's community. Set up a workflow in GitHub Actions to update the most recent posts weekly.
 - Add user signup and authentication for a personalised shopping experience.
