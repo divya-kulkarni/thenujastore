@@ -72,15 +72,7 @@ export const Product = () => {
                 <h2>
                   <u>PRODUCT DETAILS</u>
                 </h2>
-                <p className="description">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
-                </p>
+                <p className="description">{product.description}</p>
               </Col>
             </Row>
             <Row>
@@ -105,6 +97,8 @@ const productData = [
     image: n1,
     path: "forget-me-not-necklace",
     category: "necklace",
+    description:
+      "Carry the sentiment of everlasting love with our Forget-Me-Not Necklace. Handcrafted with care, this necklace features a delicate pendant adorned with real forget-me-not flowers preserved in resin. Each flower is meticulously selected and arranged to capture the beauty and charm of these tiny blossoms. Suspended from a sterling silver chain, this pendant serves as a heartfelt reminder of cherished memories and enduring affection.",
   },
   {
     id: 2,
@@ -114,6 +108,8 @@ const productData = [
     image: fairytale,
     path: "forget-me-not-bracelet",
     category: "bracelet",
+    description:
+      "Carry the sentiment of everlasting love and cherished memories with our Forget-Me-Not Bracelet. With its adjustable chain and lobster clasp closure, this bracelet ensures a comfortable fit for any wrist size. Wear it as a daily reminder of the special bonds that will never be forgotten.",
   },
   {
     id: 1,
@@ -123,15 +119,8 @@ const productData = [
     image: n2,
     path: "rosebud-necklace",
     category: "necklace",
-  },
-  {
-    id: 2,
-    name: "ROSEBUD BRACELET",
-    collection: "Rosebud",
-    price: 30,
-    image: rosebud,
-    path: "rosebud-bracelet",
-    category: "bracelet",
+    description:
+      "Bring the essence of the forest wherever you go with our Leafy Lariat Necklace. Handmade from sterling silver, this necklace features a lariat-style design adorned with finely detailed leaves and branches. The adjustable length allows for versatile styling, while the organic texture of the leaves adds a touch of rustic elegance. Whether worn alone or layered with other botanical-inspired pieces, this necklace is a stunning representation of nature's beauty.",
   },
   {
     id: 5,
@@ -149,14 +138,18 @@ const productData = [
     image: pastel,
     path: "pastel-dreams-earrings",
     category: "earrings",
+    description:
+      "Handcrafted clay earrings, inspired by the colors of the sky. Each pair is unique and made with love.",
   },
   {
     id: 2,
-    name: "DISCO QUEEN EARRINGS",
+    name: "STARDUST EARRINGS",
     price: 15,
     image: b1,
-    path: "disco-queen-earrings",
+    path: "stardust-earrings",
     category: "earrings",
+    description:
+      "Illuminate your look with our Stardust Earrings, designed to add a touch of sparkle and glamour to any outfit. Crafted with lightweight yet durable materials, these earrings feature a cascade of shimmering glitter suspended from sterling silver or gold-plated hooks. The glitter catches the light with every movement, creating a dazzling effect that is sure to turn heads.",
   },
   {
     id: 3,
@@ -164,6 +157,8 @@ const productData = [
     price: 25,
     image: b3,
     path: "lavender-haze-hoops",
+    description:
+      "Step into a tranquil oasis with our Lavender Haze Earrings, inspired by the serene beauty of blooming lavender fields. Handcrafted with care, these earrings feature delicate lavender blooms meticulously crafted from resin, capturing the essence of nature's tranquility. Each hoop is adorned with a cluster of these miniature flowers, creating a whimsical and feminine design.Whether worn as a subtle nod to nature's beauty or as a statement piece to brighten your ensemble, these Lavender Fields Hoop Earrings will add a touch of charm and sophistication to any look. ",
   },
   {
     id: 6,

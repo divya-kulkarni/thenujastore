@@ -88,4 +88,8 @@
   button:hover {
     background-color: black !important;
   }
+
+  .quantifier {
+    margin: 1rem 0;
+  }
 }

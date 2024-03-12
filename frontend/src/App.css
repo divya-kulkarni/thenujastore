@@ -49,21 +49,6 @@ Col {
   src: url("./font/DINNeuzeitGroteskLT-Light.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "Cheri-light";
-  src: url("./font/cheri-light.TTF") format("truetype");
-}
-
-@font-face {
-  font-family: "Cheri-bold";
-  src: url("./font/cheri-bold.TTF") format("truetype");
-}
-
-@font-face {
-  font-family: "Emily";
-  src: url("./font/emily.ttf") format("truetype");
-}
-
 @media (min-width: 45rem) {
   * {
     --fs-xl: clamp(15rem, 18rem, 30rem);

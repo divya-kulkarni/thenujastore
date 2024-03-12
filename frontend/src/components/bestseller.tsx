@@ -7,6 +7,7 @@ import b4 from "../assets/bestsellers/b4.jpg";
 import b5 from "../assets/bestsellers/b5.jpg";
 import b6 from "../assets/bestsellers/b6.jpg";
 import n3 from "../assets/necklace2.jpg";
+import n2 from "../assets/f8.jpg";
 
 export const Bestsellers = () => {
   const getNextPage = (path: string) => {
@@ -48,10 +49,10 @@ export const Bestsellers = () => {
 const bestsellerData = [
   {
     id: 1,
-    name: "DISCO QUEEN EARRINGS",
+    name: "STARDUST EARRINGS",
     price: 15,
     image: b1,
-    path: "disco-queen-earrings",
+    path: "stardust-earrings",
   },
   {
     id: 2,
@@ -69,24 +70,25 @@ const bestsellerData = [
   },
   {
     id: 4,
-    name: "PASTEL BUTTERFLY EARRINGS",
-    price: 25,
-    image: b4,
-    path: "pastel-butterfly-earrings",
-  },
-  {
-    id: 5,
     name: "ROSE DROP EARRINGS",
     price: 25,
     image: b5,
     path: "rose-drop-earrings",
   },
   {
-    id: 6,
-    name: "GOLDEN HOUR EARRINGS",
+    id: 5,
+    name: "ORCHID NECKLACE",
     price: 25,
-    image: b6,
-    path: "golden-hour-earrings",
+    image: n2,
+    path: "orchid-necklace",
+  },
+
+  {
+    id: 6,
+    name: "PASTEL DREAM EARRINGS",
+    price: 25,
+    image: b4,
+    path: "pastel-butterfly-earrings",
   },
   {
     id: 9,

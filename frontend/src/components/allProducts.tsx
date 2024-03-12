@@ -94,10 +94,10 @@ export const productData = [
   },
   {
     id: 7,
-    name: "DISCO QUEEN EARRINGS",
+    name: "STARDUST EARRINGS",
     price: 15,
     image: b1,
-    path: "disco-queen-earrings",
+    path: "stardust-earrings",
     category: "earrings",
   },
   {

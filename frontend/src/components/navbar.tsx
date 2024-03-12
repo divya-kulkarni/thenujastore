@@ -1,4 +1,3 @@
-import React, { useState, useEffect, useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -6,25 +5,11 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import "../styling/navbar.css";
 import shoppingCart from "../assets/icons/cart.svg";
 import { NavDropdown, NavbarText } from "react-bootstrap";
-import { CartContext } from "./cartContext";
 import logo from "../assets/logo-transparent.png";
 
 export const NavBar = () => {
   const getNextPage = (path: string) => {
     window.location.pathname = path;
-  };
-  const { cartItems } = useContext(CartContext);
-  const [isHoveredCategory, setIsHoveredCategory] = useState(false);
-  const handleHoverCategory = () => {
-    setIsHoveredCategory(!isHoveredCategory);
-  };
-  const [isHoveredCollection, setIsHoveredCollection] = useState(false);
-  const handleHoverCollection = () => {
-    setIsHoveredCollection(!isHoveredCollection);
-  };
-  const [isHoveredInfo, setIsHoveredInfo] = useState(false);
-  const handleHoverInfo = () => {
-    setIsHoveredInfo(!isHoveredInfo);
   };
 
   return (
