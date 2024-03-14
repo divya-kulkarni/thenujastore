@@ -1,6 +1,6 @@
 # 🌱 thenujastore
 
-An e-commerce website for the Instagram-born jewellery business, created using React and TypeScript. This webiste is fully responsive. It is not integrated with any backed, due to time constraints.
+An e-commerce website for the Instagram-born jewelry business, created using React and TypeScript. This website is fully responsive. It is not integrated with any backed, due to time constraints.
 
 ## 🔨 Tech Stack:
 
@@ -14,7 +14,7 @@ An e-commerce website for the Instagram-born jewellery business, created using R
 Here's what you can see on the website:
 
 - Responsive Navbar
-  (offcanvas for mobile)
+  (Off canvas for mobile)
 - Product listings by category
 - Product listings by collection
 - Users' testimonials
@@ -25,11 +25,11 @@ Here's what you can see on the website:
 
 ## 👩🏻‍🍳 The Process
 
-Since this is a real brand with it's own identity, I interviewed the owner about their idea of the website. Some keywords they used - bright, clean, youthul. I also made note of the features they suggested, like User Testimonials.
+Since this is a real brand with its own identity, I interviewed the owner about their idea of the website. Some keywords they used - bright, clean, youthful. I also made note of the features they suggested, like User Testimonials.
 
 According to their description, I created wireframes and used agile strategy to get continuous feedback and refine my designs.
 
-Since the goal of this project was to hone my frontend development skills, I decided to omit the backed part of it, including user singup and authentication.
+Since the goal of this project was to hone my frontend development skills, I decided to omit the backed part of it, including user signup and authentication.
 
 I started the development process using a mobile-first approach. As I added new components, each of them were developed to work on mobile first, and then adapted to larger screens using media queries.
 
@@ -51,13 +51,13 @@ Each part of this project helped me understand more about building apps, managin
 ## 💡 What can be improved
 
 - Add a dynamic Instagram post section, urging users to join the brand's community. Set up a workflow in GitHub Actions to update the most recent posts weekly.
-- Add user signup and authentication for a personalised shopping experience.
-- Fetch product data from mongodb.
+- Add user signup and authentication for a personalized shopping experience.
+- Fetch product data from MongoDB.
 
 ## 💻 Installation & Execution
 
-- Clone the respsitory into your machine.
+- Clone the repository into your machine.
 - Run `npm install` or `yarn` in `frontend` directory to install dependencies.
 - Run `npm start` or `yarn start` to get the project started.
 - Open http://localhost:3000 (or the address shown in your console) in your web browser to view the app.
-- For payment silulation, use any test card from [this list](https://docs.stripe.com/testing#cards).
+- For payment simulation, use any test card from [this list](https://docs.stripe.com/testing#cards).
