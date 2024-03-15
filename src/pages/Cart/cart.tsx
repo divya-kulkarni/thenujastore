@@ -1,14 +1,14 @@
 import { Row, Col, Container, Button } from "react-bootstrap";
 import { useContext, useEffect, useState } from "react";
-import { Footer } from "../components/footer";
-import { NavBar } from "../components/navbar";
-import { CartContext } from "../components/cartContext";
-import { SuccessModal } from "../components/successModal";
-import "../styling/cart.css";
-import "../styling/quantifier.css";
-import empty from "../assets/empty-cart.png";
+import { Footer } from "../../components/footer";
+import { NavBar } from "../../components/navbar";
+import { CartContext } from "./cartContext";
+import { SuccessModal } from "../../components/successModal";
+import "../../styling/cart.css";
+import "../../styling/quantifier.css";
+import empty from "../../assets/empty-cart.png";
 import { Link, useLocation } from "react-router-dom";
-import { Suggestions } from "../components/suggestions";
+import { Suggestions } from "../../components/suggestions";
 
 export const Cart = () => {
   const getNextPage = (path: string) => {

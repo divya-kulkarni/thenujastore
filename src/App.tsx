@@ -1,12 +1,12 @@
 import { LandingPage } from "./pages/landingPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Cart } from "./pages/cart";
+import { Cart } from "./pages/Cart/cart";
 import { Collections } from "./components/collections";
 import { ShowCollection } from "./pages/showCollection";
 import { Product } from "./components/product";
 import { ShowCategory } from "./pages/showCategory";
 import { AllProducts } from "./pages/allProducts";
-import Checkout from "./components/checkout";
+import Checkout from "./pages/Checkout/checkout";
 import { FAQ } from "./pages/faq";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";

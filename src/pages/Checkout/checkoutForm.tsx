@@ -4,9 +4,9 @@ import {
   useStripe,
   useElements,
 } from "@stripe/react-stripe-js";
-import { CartContext } from "../components/cartContext";
+import { CartContext } from "../Cart/cartContext";
 import { useContext } from "react";
-import "../styling/checkoutForm.css";
+import "../../styling/checkoutForm.css";
 
 export const CheckoutForm = () => {
   const clearCart = useContext(CartContext);

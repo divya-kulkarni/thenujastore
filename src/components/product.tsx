@@ -11,7 +11,7 @@ import b5 from "../assets/bestsellers/b5.jpg";
 import b6 from "../assets/bestsellers/b6.jpg";
 import { NavBar } from "./navbar";
 import { Footer } from "./footer";
-import { CartContext } from "../components/cartContext";
+import { CartContext } from "../pages/Cart/cartContext";
 import { Suggestions } from "./suggestions";
 import "../styling/product.css";
 
