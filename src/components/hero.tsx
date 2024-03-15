@@ -67,22 +67,6 @@ export const Hero = () => {
             </div>
           </div>
         </Carousel.Item>
-        {/* <Carousel.Item interval={interval} style={{ overflowY: "hidden" }}>
-          <div className="hero-video">
-            <video className="d-block" autoPlay loop muted>
-              <source src={heroVideo} />
-            </video>
-            <div
-              className="overlay d-flex align-items-center justify-content-center"
-              onClick={() => getNextPage("/collections/rosebud")}
-            >
-              <section className="overlay-content text-center">
-                <h5>NEW ROSEBUD COLLECTION</h5>
-                <h2>ENCHANTING, DELICATE, TIMELESS </h2>
-              </section>
-            </div>
-          </div>
-        </Carousel.Item> */}
       </Carousel>
     </div>
   );

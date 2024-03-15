@@ -4,11 +4,10 @@ import necklace from "../assets/necklace-thumbnail.jpg";
 import earrings from "../assets/earring-thumbnail.jpg";
 import rings from "../assets/rings.jpg";
 import bracelets from "../assets/bracelet-thumbnail.jpg";
+import { useNavigate } from "react-router-dom";
 
 export const Category = () => {
-  const getNextPage = (path: string) => {
-    window.location.pathname = path;
-  };
+  const navigate=useNavigate();
   return (
     <div className="category-container">
       <h4>VIEW OUR</h4>
@@ -22,7 +21,7 @@ export const Category = () => {
                   src={rings}
                   alt="rings"
                   className="img-fluid"
-                  onClick={() => getNextPage("/rings")}
+                  onClick={() => navigate("/rings")}
                 />
               </div>
               <h3>RINGS</h3>
@@ -35,7 +34,7 @@ export const Category = () => {
                   src={necklace}
                   alt="necklace"
                   className="img-fluid"
-                  onClick={() => getNextPage("/necklace")}
+                  onClick={() => navigate("/necklace")}
                 />
               </div>
               <h3>NECKLACES</h3>
@@ -48,7 +47,7 @@ export const Category = () => {
                   src={earrings}
                   alt="earrings"
                   className="img-fluid"
-                  onClick={() => getNextPage("/earring")}
+                  onClick={() => navigate("/earring")}
                 />
               </div>
               <h3>EARRINGS</h3>
@@ -61,7 +60,7 @@ export const Category = () => {
                   src={bracelets}
                   alt="bracelets"
                   className="img-fluid"
-                  onClick={() => getNextPage("/bracelet")}
+                  onClick={() => navigate("/bracelet")}
                 />
               </div>
               <h3>BRACELETS</h3>

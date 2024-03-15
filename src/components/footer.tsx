@@ -1,11 +1,10 @@
 import { Row, Col, Container } from "react-bootstrap";
 import "../styling/footer.css";
 import logo from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 export const Footer = () => {
-  const getNextPage = (path: string) => {
-    window.location.pathname = path;
-  };
+  const navigate=useNavigate();
   return (
     <div className="footer">
       <Container>
@@ -33,17 +32,17 @@ export const Footer = () => {
             <h2>
               <u>MENU</u>
             </h2>
-            <h3 onClick={() => getNextPage("/faq")}>FAQ</h3>
+            <h3 onClick={() => navigate("/faq")}>FAQ</h3>
             <h3>Privacy Policy</h3>
           </Col>
           <Col xs={6} md={3} className="links">
             <h2>
               <u>SHOP</u>
             </h2>
-            <h3 onClick={() => getNextPage("/necklace")}>Necklaces</h3>
-            <h3 onClick={() => getNextPage("/earrings")}>Earrings</h3>
-            <h3 onClick={() => getNextPage("/bracelet")}>Bracelets</h3>
-            <h3 onClick={() => getNextPage("/rings")}>Rings</h3>
+            <h3 onClick={() => navigate("/necklace")}>Necklaces</h3>
+            <h3 onClick={() => navigate("/earrings")}>Earrings</h3>
+            <h3 onClick={() => navigate("/bracelet")}>Bracelets</h3>
+            <h3 onClick={() => navigate("/rings")}>Rings</h3>
           </Col>
         </Row>
         <Row>

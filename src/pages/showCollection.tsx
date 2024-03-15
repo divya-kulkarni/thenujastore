@@ -4,7 +4,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import rosebud from "../assets/categories/rosebud.jpg";
 import fairytale from "../assets/categories/necklace-thumbnail.jpg";
 import pastel from "../assets/categories/pastel-dreams.jpg";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../styling/showCollection.css";
 
 export const ShowCollection = () => {
@@ -21,9 +21,7 @@ export const ShowCollection = () => {
     title = "PASTEL DREAMS";
     collectionData = pastelData;
   }
-  const getNextPage = (productName: string) => {
-    window.location.pathname = "/products/" + productName;
-  };
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -40,7 +38,7 @@ export const ShowCollection = () => {
                       src={item.image}
                       alt="rings"
                       className="img-fluid"
-                      onClick={() => getNextPage(item.path)}
+                      onClick={() => navigate(item.path)}
                     />
                     <h3>{item.name}</h3>
                     <h4>{item.price}</h4>

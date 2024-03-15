@@ -6,17 +6,16 @@ import "../styling/navbar.css";
 import shoppingCart from "../assets/icons/cart.svg";
 import { NavDropdown, NavbarText } from "react-bootstrap";
 import logo from "../assets/logo-transparent.png";
+import { useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
-  const getNextPage = (path: string) => {
-    window.location.pathname = path;
-  };
+  const navigate = useNavigate();
 
   return (
     <Navbar expand="md" id="navbar" fixed="top">
       <Container className="navbar-container">
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
-        <Navbar.Brand onClick={() => getNextPage("/")}>
+        <Navbar.Brand onClick={() => navigate("/")}>
           <img src={logo} alt="thenujastore" className="logo" />
         </Navbar.Brand>
         <Navbar.Offcanvas
@@ -31,7 +30,7 @@ export const NavBar = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-start flex-grow-1 pe-3 top-nav">
-              <Nav.Link className="main-link" onClick={() => getNextPage("/")}>
+              <Nav.Link className="main-link" onClick={() => navigate("/")}>
                 HOME
               </Nav.Link>
               <hr />
@@ -39,28 +38,28 @@ export const NavBar = () => {
                 <NavDropdown.Item
                   href=""
                   className="inner-link"
-                  onClick={() => getNextPage("/necklace")}
+                  onClick={() => navigate("/necklace")}
                 >
                   NECKLACES
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   href=""
                   className="inner-link"
-                  onClick={() => getNextPage("/bracelet")}
+                  onClick={() => navigate("/bracelet")}
                 >
                   BRACELETS
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   href=""
                   className="inner-link"
-                  onClick={() => getNextPage("/earrings")}
+                  onClick={() => navigate("/earrings")}
                 >
                   EARRINGS
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   href=""
                   className="inner-link"
-                  onClick={() => getNextPage("/rings")}
+                  onClick={() => navigate("/rings")}
                 >
                   RINGS
                 </NavDropdown.Item>
@@ -70,21 +69,21 @@ export const NavBar = () => {
                 <NavDropdown.Item
                   href=""
                   className="inner-link"
-                  onClick={() => getNextPage("/necklace")}
+                  onClick={() => navigate("/necklace")}
                 >
                   ROSEBUD
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   href=""
                   className="inner-link"
-                  onClick={() => getNextPage("/bracelet")}
+                  onClick={() => navigate("/bracelet")}
                 >
                   FAIRYTALE
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   href=""
                   className="inner-link"
-                  onClick={() => getNextPage("/earrings")}
+                  onClick={() => navigate("/earrings")}
                 >
                   PASTEL DREAMS
                 </NavDropdown.Item>
@@ -101,7 +100,7 @@ export const NavBar = () => {
           <img
             src={shoppingCart}
             alt="shopping cart"
-            onClick={() => getNextPage("/cart")}
+            onClick={() => navigate("/cart")}
           />
         </NavbarText>
       </Container>

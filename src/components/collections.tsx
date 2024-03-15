@@ -5,11 +5,10 @@ import fairytale from "../assets/categories/necklace-thumbnail.jpg";
 import pastel from "../assets/categories/pastel-dreams.jpg";
 import { NavBar } from "./navbar";
 import { Footer } from "./footer";
+import { useNavigate } from "react-router-dom";
 
 export const Collections = () => {
-  const getNextPage = (path: string) => {
-    window.location.pathname = path;
-  };
+  const navigate=useNavigate();
   return (
     <>
       <NavBar />
@@ -26,7 +25,7 @@ export const Collections = () => {
                       src={item.image}
                       alt="rings"
                       className="img-fluid"
-                      onClick={() => getNextPage(pathname)}
+                      onClick={() => navigate(pathname)}
                     />
                     <h3>{item.name}</h3>
                   </div>

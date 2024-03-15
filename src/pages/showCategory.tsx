@@ -6,11 +6,12 @@ import n2 from "../assets/f8.jpg";
 import n3 from "../assets/necklace3.jpg";
 import "../styling/showCategory.css";
 import { Row, Col, Container } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { NavBar } from "../components/navbar";
 import { Footer } from "../components/footer";
 
 export const ShowCategory = () => {
+  const navigate = useNavigate();
   const { category } = useParams();
 
   const categoryData = productData.filter(
@@ -18,9 +19,6 @@ export const ShowCategory = () => {
   );
 
   const title = category?.toUpperCase();
-  const getNextPage = (productName: string) => {
-    window.location.pathname = "/products/" + productName;
-  };
   return (
     <div className="product-container">
       <NavBar />
@@ -35,7 +33,7 @@ export const ShowCategory = () => {
                     src={item.image}
                     alt=""
                     className="img-fluid"
-                    onClick={() => getNextPage(item.path)}
+                    onClick={() => navigate(item.path)}
                   />
                   <h3>{item.name}</h3>
                   <h4>{item.price}</h4>

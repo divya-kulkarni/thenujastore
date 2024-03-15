@@ -7,13 +7,11 @@ import { SuccessModal } from "../../components/successModal";
 import "../../styling/cart.css";
 import "../../styling/quantifier.css";
 import empty from "../../assets/empty-cart.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Suggestions } from "../../components/suggestions";
 
 export const Cart = () => {
-  const getNextPage = (path: string) => {
-    window.location.pathname = path;
-  };
+  const navigate = useNavigate();
   const { cartItems, addToCart, removeFromCart, clearCart, getCartTotal } =
     useContext(CartContext);
   const location = useLocation();
@@ -129,7 +127,7 @@ export const Cart = () => {
               <Row>
                 <Button
                   className="checkout"
-                  onClick={() => getNextPage("/checkout")}
+                  onClick={() => navigate("/checkout")}
                 >
                   CHECKOUT
                 </Button>

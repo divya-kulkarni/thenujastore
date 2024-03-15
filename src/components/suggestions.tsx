@@ -1,6 +1,7 @@
 import { Row, Col, Container } from "react-bootstrap";
 import { productData } from "../pages/allProducts";
 import "../styling/suggestions.css";
+import { useNavigate } from "react-router-dom";
 
 const getRandomSuggestions = () => {
   const suggestionLength: number = 4;
@@ -9,9 +10,7 @@ const getRandomSuggestions = () => {
 };
 
 export const Suggestions = () => {
-  const getNextPage = (productName: string) => {
-    window.location.pathname = "/products/" + productName;
-  };
+  const navigate = useNavigate();
   let randomSuggestions = getRandomSuggestions();
   return (
     <div className="suggestions">
@@ -28,7 +27,7 @@ export const Suggestions = () => {
                       src={item.image}
                       alt=""
                       className="img-fluid"
-                      onClick={() => getNextPage(item.path)}
+                      onClick={() => navigate(item.path)}
                     />
                   </div>
                   <h3>{item.name}</h3>

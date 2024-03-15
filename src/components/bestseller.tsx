@@ -8,11 +8,10 @@ import b5 from "../assets/bestsellers/b5.jpg";
 import b6 from "../assets/bestsellers/b6.jpg";
 import n3 from "../assets/necklace2.jpg";
 import n2 from "../assets/f8.jpg";
+import {useNavigate} from "react-router-dom";
 
 export const Bestsellers = () => {
-  const getNextPage = (path: string) => {
-    window.location.pathname = path;
-  };
+  const navigate=useNavigate();
   return (
     <div className="bestseller-container">
       <h4>CHECK OUT OUR</h4>
@@ -28,7 +27,7 @@ export const Bestsellers = () => {
                       src={product.image}
                       alt=""
                       className="img-fluid"
-                      onClick={() => getNextPage("/products/" + product.path)}
+                      onClick={() => navigate("/products/" + product.path)}
                     />
                   </div>
                   <h5>{product.name}</h5>
@@ -39,7 +38,7 @@ export const Bestsellers = () => {
           })}
         </Row>
       </Container>
-      <Button className="mt-3" onClick={() => getNextPage("/products")}>
+      <Button className="mt-3" onClick={() => navigate("/products")}>
         VIEW ALL PRODUCTS
       </Button>
     </div>
