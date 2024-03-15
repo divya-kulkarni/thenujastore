@@ -1,9 +1,19 @@
 import Modal from "react-bootstrap/Modal";
+import { useNavigate } from "react-router-dom";
+import { CartContext } from "../pages/Cart/cartContext";
+import { useContext } from "react";
 
 export const SuccessModal = (props: any) => {
+  const navigate = useNavigate();
+  const { clearCart } = useContext(CartContext);
+  const resetCart = () => {
+    navigate("/cart");
+    clearCart();
+  };
+
   return (
     <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
-      <Modal.Header closeButton>
+      <Modal.Header closeButton onHide={() => resetCart()}>
         <Modal.Title
           id="contained-modal-title-vcenter"
           style={{ fontFamily: "Grotesk-light" }}

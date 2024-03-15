@@ -27,7 +27,6 @@ export const Cart = () => {
       clearCart();
       setModalShow(true);
     }
-    // eslint-disable-next-line
   }, [location.search]);
   return (
     <>
@@ -140,9 +139,8 @@ export const Cart = () => {
             <div className="empty-cart">
               <img src={empty} className="img-fluid" alt="empty-cart" />
               <h2>YOUR CART LOOKS LIGHTER THAN A FEATHER!</h2>
-              <Button className="mt-3">
-                <Link to="/products">TREAT YOURSELF</Link>
-              </Button>
+
+              <Link to="/products">TREAT YOURSELF →</Link>
             </div>
           )}
         </Container>

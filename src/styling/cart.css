@@ -15,6 +15,13 @@
   margin: 0;
 }
 
+.empty-cart {
+  text-align: center;
+  a {
+    color: black !important;
+  }
+}
+
 .cart-container {
   height: 100vh;
   margin-top: 7rem;
@@ -65,7 +72,7 @@
   text-align: right;
 }
 
-@media screen and (min-width: 45rem) {
+@media screen and (min-width: 63rem) {
   .cart-container {
     margin: 10rem 20rem 2rem;
     button {
