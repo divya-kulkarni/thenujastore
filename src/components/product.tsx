@@ -87,39 +87,39 @@ export const Product = () => {
   }
 };
 
-const productData = [
+export const productData = [
   {
     id: 1,
-    name: "FORGET-ME-NOT NECKLACE",
+    name: "FORGET-ME-NOT HEXAGON NECKLACE",
     collection: "Forget-Me-Not",
     price: 50,
     image: n1,
-    path: "forget-me-not-necklace",
+    path: "forget-me-not-hexagon-necklace",
     category: "necklace",
     description:
       "Carry the sentiment of everlasting love with our Forget-Me-Not Necklace. Handcrafted with care, this necklace features a delicate pendant adorned with real forget-me-not flowers preserved in resin. Each flower is meticulously selected and arranged to capture the beauty and charm of these tiny blossoms. Suspended from a sterling silver chain, this pendant serves as a heartfelt reminder of cherished memories and enduring affection.",
   },
   {
     id: 2,
-    name: "FORGET-ME-NOT BRACELET",
+    name: "FORGET-ME-NOT NECKLACE",
     collection: "Forget-Me-Not",
     price: 30,
     image: fairytale,
-    path: "forget-me-not-bracelet",
+    path: "forget-me-not-necklace",
     category: "bracelet",
     description:
       "Carry the sentiment of everlasting love and cherished memories with our Forget-Me-Not Bracelet. With its adjustable chain and lobster clasp closure, this bracelet ensures a comfortable fit for any wrist size. Wear it as a daily reminder of the special bonds that will never be forgotten.",
   },
   {
     id: 1,
-    name: "ROSEBUD NECKLACE",
+    name: "CLEMATIS NECKLACE",
     collection: "Rosebud",
     price: 50,
     image: n2,
-    path: "rosebud-necklace",
+    path: "clematis-necklace",
     category: "necklace",
     description:
-      "Bring the essence of the forest wherever you go with our Leafy Lariat Necklace. Handmade from sterling silver, this necklace features a lariat-style design adorned with finely detailed leaves and branches. The adjustable length allows for versatile styling, while the organic texture of the leaves adds a touch of rustic elegance. Whether worn alone or layered with other botanical-inspired pieces, this necklace is a stunning representation of nature's beauty.",
+      "Bring the essence of the forest wherever you go with our Clematis Necklace. Handmade from sterling silver, this necklace features a lariat-style design adorned with finely detailed leaves and branches. The adjustable length allows for versatile styling, while the organic texture of the leaves adds a touch of rustic elegance. Whether worn alone or layered with other botanical-inspired pieces, this necklace is a stunning representation of nature's beauty.",
   },
   {
     id: 5,
@@ -128,6 +128,8 @@ const productData = [
     image: b5,
     path: "rose-drop-earrings",
     category: "earrings",
+    description:
+      "Adorn yourself with the timeless elegance of our Rose Earrings. Delicately crafted with meticulous attention to detail, each earring features real rose petals, symbolizing love, beauty, and femininity. Made from high-quality materials, these earrings exude sophistication and charm, making them the perfect accessory for any occasion. Whether you're dressing up for a special event or adding a touch of romance to your everyday look, our Rose Earrings are sure to turn heads and capture hearts. Elevate your style with a touch of floral-inspired luxury.",
   },
   {
     id: 3,
@@ -166,5 +168,7 @@ const productData = [
     image: b6,
     path: "golden-hour-earrings",
     category: "earrings",
+    description:
+      "Handcrafted glitter earrings, inspired by the colors of the sunset. Each pair is unique and made with love.",
   },
 ];
