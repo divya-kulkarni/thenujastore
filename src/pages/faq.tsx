@@ -8,17 +8,15 @@ export const FAQ = () => {
     <>
       <NavBar />
       <div className="faq">
-        <Accordion defaultActiveKey="0">
-          <Accordion.Item eventKey="1">
+        <Accordion>
+          <Accordion.Item eventKey="0">
             <Accordion.Header>ARE THESE PIECES WATERPROOF?</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              While we strive to provide high-quality products, we do not
+              guarantee that all items are waterproof. We recommend reviewing
+              the product descriptions for specific details on waterproof
+              features or contacting our customer service team for further
+              assistance.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
@@ -26,37 +24,25 @@ export const FAQ = () => {
               DO YOU OFFER INTERNATIONAL SHIPPING?
             </Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Currently, we do not offer international shipping. Our services
+              are limited to domestic shipping within India. We apologize for
+              any inconvenience this may cause.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1">
+          <Accordion.Item eventKey="2">
             <Accordion.Header>WHAT IS YOUR RETURN POLICY</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              At TheNujastore, we prioritize customer satisfaction. Since each
+              piece is made-to-order with great care, we do not accept return
+              requests. We appreciate your understanding.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1">
+          <Accordion.Item eventKey="3">
             <Accordion.Header>HOW CAN I CONTACT YOU?</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              For any inquiries or concerns, please contact us on our Instagram
+              page @thenujastore or email us at thenujastore@gmail.com. We will
+              be happy to assist you.
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
