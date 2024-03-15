@@ -15,8 +15,7 @@ export const SuccessModal = (props: any) => {
         <p style={{ fontFamily: "Grotesk-light" }}>
           Thank you for shopping with us! Your items will be shipped shortly. If
           you have any questions or concerns, feel free to reach out to our
-          customer support team. <br />
-          Happy shopping! 🛍️
+          customer support team. Happy shopping! 🛍️
         </p>
       </Modal.Body>
     </Modal>

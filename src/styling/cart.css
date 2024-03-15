@@ -71,9 +71,6 @@
     button {
       width: fit-content !important;
     }
-    button:hover {
-      background-color: black !important;
-    }
     img {
       width: 100%;
     }

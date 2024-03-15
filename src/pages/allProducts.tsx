@@ -10,8 +10,8 @@ import b5 from "../assets/bestsellers/b5.jpg";
 import b6 from "../assets/bestsellers/b6.jpg";
 import "../styling/showCategory.css";
 import { Row, Col, Container } from "react-bootstrap";
-import { NavBar } from "./navbar";
-import { Footer } from "./footer";
+import { NavBar } from "../components/navbar";
+import { Footer } from "../components/footer";
 
 export const AllProducts = () => {
   return (

@@ -1,16 +1,12 @@
-import { Button, Carousel } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import "../styling/hero.css";
 import gift from "../assets/gift-hands.jpg";
 import heroBracelet from "../assets/hero/hero2.jpg";
 import heroEarrings from "../assets/hero-earrings.jpg";
-import heroRings from "../assets/hero/hero5.jpg";
 
 const interval = 30000;
 
 export const Hero = () => {
-  const getNextPage = (path: string) => {
-    window.location.pathname = path;
-  };
   return (
     <div className="hero">
       <Carousel controls={false} fade>

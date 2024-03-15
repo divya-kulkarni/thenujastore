@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useContext } from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
-import rosebud from "../assets/categories/rosebud.jpg";
 import fairytale from "../assets/categories/necklace-thumbnail.jpg";
 import pastel from "../assets/categories/pastel-dreams.jpg";
 import n1 from "../assets/necklace1.jpg";

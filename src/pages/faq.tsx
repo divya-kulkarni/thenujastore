@@ -1,6 +1,6 @@
 import Accordion from "react-bootstrap/Accordion";
-import { NavBar } from "./navbar";
-import { Footer } from "./footer";
+import { NavBar } from "../components/navbar";
+import { Footer } from "../components/footer";
 import "../styling/faq.css";
 
 export const FAQ = () => {
@@ -48,9 +48,7 @@ export const FAQ = () => {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header>
-              HOW CAN I CONTACT YOU?
-            </Accordion.Header>
+            <Accordion.Header>HOW CAN I CONTACT YOU?</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

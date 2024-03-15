@@ -1,13 +1,13 @@
-import { LandingPage } from "./components/landingPage";
+import { LandingPage } from "./pages/landingPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Cart } from "./components/cart";
+import { Cart } from "./pages/cart";
 import { Collections } from "./components/collections";
-import { ShowCollection } from "./components/showCollection";
+import { ShowCollection } from "./pages/showCollection";
 import { Product } from "./components/product";
-import { ShowCategory } from "./components/showCategory";
-import { AllProducts } from "./components/allProducts";
+import { ShowCategory } from "./pages/showCategory";
+import { AllProducts } from "./pages/allProducts";
 import Checkout from "./components/checkout";
-import { FAQ } from "./components/faq";
+import { FAQ } from "./pages/faq";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 

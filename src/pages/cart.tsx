@@ -1,14 +1,14 @@
 import { Row, Col, Container, Button } from "react-bootstrap";
 import { useContext, useEffect, useState } from "react";
-import { Footer } from "./footer";
-import { NavBar } from "./navbar";
+import { Footer } from "../components/footer";
+import { NavBar } from "../components/navbar";
 import { CartContext } from "../components/cartContext";
-import { SuccessModal } from "./successModal";
+import { SuccessModal } from "../components/successModal";
 import "../styling/cart.css";
 import "../styling/quantifier.css";
 import empty from "../assets/empty-cart.png";
-import { useLocation } from "react-router-dom";
-import { Suggestions } from "./suggestions";
+import { Link, useLocation } from "react-router-dom";
+import { Suggestions } from "../components/suggestions";
 
 export const Cart = () => {
   const getNextPage = (path: string) => {
@@ -27,6 +27,7 @@ export const Cart = () => {
       clearCart();
       setModalShow(true);
     }
+    // eslint-disable-next-line
   }, [location.search]);
   return (
     <>
@@ -139,8 +140,8 @@ export const Cart = () => {
             <div className="empty-cart">
               <img src={empty} className="img-fluid" alt="empty-cart" />
               <h2>YOUR CART LOOKS LIGHTER THAN A FEATHER!</h2>
-              <Button className="mt-3" onClick={() => getNextPage("/products")}>
-                TREAT YOURSELF
+              <Button className="mt-3">
+                <Link to="/products">TREAT YOURSELF</Link>
               </Button>
             </div>
           )}

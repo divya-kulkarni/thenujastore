@@ -1,5 +1,5 @@
 import { Row, Col, Container } from "react-bootstrap";
-import { productData } from "./allProducts";
+import { productData } from "../pages/allProducts";
 import "../styling/suggestions.css";
 
 const getRandomSuggestions = () => {
