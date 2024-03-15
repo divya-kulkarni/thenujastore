@@ -41,12 +41,12 @@ Col {
 
 @font-face {
   font-family: "Grotesk-bold";
-  src: url("./font/DINNeuzeitGroteskLT-BoldCond.ttf") format("truetype");
+  src: url("./assets/font/DINNeuzeitGroteskLT-BoldCond.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Grotesk-light";
-  src: url("./font/DINNeuzeitGroteskLT-Light.ttf") format("truetype");
+  src: url("./assets/font/DINNeuzeitGroteskLT-Light.ttf") format("truetype");
 }
 
 @media (min-width: 45rem) {
