@@ -4,7 +4,7 @@
 }
 
 .testimonial-container {
-  margin: 4rem 1rem !important;
+  padding: 4rem 1rem !important;
   overflow: hidden !important;
 }
 
@@ -22,6 +22,7 @@
   background-color: #ffffff;
   transition: 0.5s ease-in-out;
   color: black;
+  min-height: 20rem;
 }
 
 .quote,
@@ -80,8 +81,8 @@
 
 @media screen and (min-width: 45rem) {
   .testimonial-container {
-    margin: 10rem 10rem !important;
-    /* height: 35rem; */
+    margin: 0 10rem !important;
+    padding: 10rem 0;
   }
 
   .quote {
@@ -89,9 +90,8 @@
   }
 
   .testimonial {
-    max-width: 70%;
+    /* max-width: 70%; */
     margin: 2rem;
-    max-width: 90%;
     font-size: var(--fs-md);
   }
 }
