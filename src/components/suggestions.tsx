@@ -10,6 +10,14 @@ const getRandomSuggestions = () => {
 };
 
 export const Suggestions = () => {
+  const handleClick = (path: string) => {
+    navigate("/products/" + path);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   const navigate = useNavigate();
   let randomSuggestions = getRandomSuggestions();
   return (
@@ -27,7 +35,7 @@ export const Suggestions = () => {
                       src={item.image}
                       alt=""
                       className="img-fluid"
-                      onClick={() => navigate(item.path)}
+                      onClick={() => handleClick(item.path)}
                     />
                   </div>
                   <h3>{item.name}</h3>
