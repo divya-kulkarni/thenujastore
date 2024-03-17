@@ -49,7 +49,7 @@ const bestsellerData = [
   {
     id: 1,
     name: "STARDUST EARRINGS",
-    price: 15,
+    price: 17,
     image: b1,
     path: "stardust-earrings",
   },
