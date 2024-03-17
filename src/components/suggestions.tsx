@@ -18,9 +18,9 @@ export const Suggestions = () => {
       <h2>YOU MIGHT ALSO LIKE</h2>
       <Container>
         <Row>
-          {randomSuggestions.map((item) => {
+          {randomSuggestions.map((item, key) => {
             return (
-              <Col xs={6} lg={3}>
+              <Col xs={6} lg={3} key={key}>
                 <div className="suggestion-item">
                   <div className="item-image">
                     <img

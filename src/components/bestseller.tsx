@@ -8,19 +8,19 @@ import b5 from "../assets/bestsellers/b5.jpg";
 import b6 from "../assets/bestsellers/b6.jpg";
 import n3 from "../assets/necklace2.jpg";
 import n2 from "../assets/f8.jpg";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Bestsellers = () => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="bestseller-container">
       <h4>CHECK OUT OUR</h4>
       <h2>Bestsellers</h2>
       <Container fluid>
         <Row>
-          {bestsellerData.map((product) => {
+          {bestsellerData.map((product, key) => {
             return (
-              <Col xs={6} md={3} xxl={3}>
+              <Col xs={6} md={3} xxl={3} key={key}>
                 <div className="bestseller">
                   <div className="bestseller-img">
                     <img
