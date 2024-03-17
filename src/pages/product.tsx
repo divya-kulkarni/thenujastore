@@ -14,6 +14,7 @@ import { Footer } from "../components/footer";
 import { CartContext } from "../pages/Cart/cartContext";
 import { Suggestions } from "../components/suggestions";
 import "../styling/product.css";
+import { InvalidProduct } from "../components/invalidProduct";
 
 export const Product = () => {
   const { productName } = useParams();
@@ -83,7 +84,7 @@ export const Product = () => {
       </>
     );
   } else {
-    return <h1>Product not found</h1>;
+    return <InvalidProduct />;
   }
 };
 

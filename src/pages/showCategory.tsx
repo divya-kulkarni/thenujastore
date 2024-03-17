@@ -9,10 +9,22 @@ import { Row, Col, Container } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
 import { NavBar } from "../components/navbar";
 import { Footer } from "../components/footer";
+import { InvalidProduct } from "../components/invalidProduct";
+
+const isValidCategory = (category: string) => {
+  const categories = ["rings", "necklaces", "bracelets", "earrings"];
+  if (!categories.includes(category)) {
+    return false;
+  }
+  return true;
+};
 
 export const ShowCategory = () => {
   const navigate = useNavigate();
   const { category } = useParams();
+  if (!isValidCategory(category!)) {
+    return <InvalidProduct />;
+  }
 
   const categoryData = productData.filter(
     (product) => product.category === category
