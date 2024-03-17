@@ -1,8 +1,7 @@
 .navbar-container {
   text-align: center;
-  align-items: center;
-  justify-content: center;
   padding: 0 !important;
+  margin: 0 !important;
   top: 0;
   background-color: white;
 }
@@ -36,6 +35,7 @@
   color: white !important;
   font-family: Grotesk-light;
   max-width: 90vw !important;
+  z-index: 9999;
 }
 
 .offcanvas-title {
@@ -77,6 +77,9 @@ hr {
 }
 
 @media screen and (min-width: 45rem) {
+  /* .navbar-container {
+    display: none;
+  } */
   .main-link {
     padding: 0 1rem !important;
     --bs-nav-link-color: black;
@@ -103,15 +106,10 @@ hr {
     width: 6rem;
     aspect-ratio: 1/1;
     padding: 0 !important;
+    margin: 0 1rem;
   }
-
-  .navbar-container {
-    max-height: fit-content;
-  }
-
   .navbar {
     background-color: white !important;
-    max-height: 5rem;
     color: black !important;
     --bs-navbar-brand-color: black !important;
     z-index: 9998;
@@ -128,19 +126,21 @@ hr {
 
   .main-link {
     font-size: var(--fs-xs) !important;
-    .show {
-      width: 100% !important;
-      background-color: white !important;
-      color: black !important;
-      z-index: 9998;
-      display: block !important;
-    }
+  }
+  .show {
+    text-align: center !important;
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .inner-link {
+    font-size: var(--fs-xs) !important;
+    color: black !important;
   }
 }
 
 @media screen and (min-width: 95rem) {
   .navbar {
-    max-height: 7rem;
     --bs-navbar-brand-color: black !important;
   }
 }
