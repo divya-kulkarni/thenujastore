@@ -7,7 +7,7 @@ import bracelets from "../assets/bracelet-thumbnail.jpg";
 import { useNavigate } from "react-router-dom";
 
 export const Category = () => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="category-container">
       <h4>VIEW OUR</h4>
@@ -32,9 +32,9 @@ export const Category = () => {
               <div className="category-img">
                 <img
                   src={necklace}
-                  alt="necklace"
+                  alt="necklaces"
                   className="img-fluid"
-                  onClick={() => navigate("/necklace")}
+                  onClick={() => navigate("/necklaces")}
                 />
               </div>
               <h3>NECKLACES</h3>
@@ -47,7 +47,7 @@ export const Category = () => {
                   src={earrings}
                   alt="earrings"
                   className="img-fluid"
-                  onClick={() => navigate("/earring")}
+                  onClick={() => navigate("/earrings")}
                 />
               </div>
               <h3>EARRINGS</h3>
@@ -60,7 +60,7 @@ export const Category = () => {
                   src={bracelets}
                   alt="bracelets"
                   className="img-fluid"
-                  onClick={() => navigate("/bracelet")}
+                  onClick={() => navigate("/bracelets")}
                 />
               </div>
               <h3>BRACELETS</h3>
