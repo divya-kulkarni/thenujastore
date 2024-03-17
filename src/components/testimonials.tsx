@@ -17,31 +17,31 @@ const testimonials: Testimonial[] = [
     id: 1,
     name: "Riya",
     quote:
-      "I absolutely love this website! It has everything I need, and the design is so fresh and fun. I absolutely love this website! It has everything I need, and the design is so fresh and fun.",
+      "Absolutely love the exquisite craftsmanship and attention to detail in every piece from thenujastore! Each handmade jewelry piece feels like a unique work of art inspired by nature's beauty",
   },
   {
     id: 2,
     name: "Alex",
     quote:
-      "This is by far the best portfolio I have ever seen. It's so creative and engaging!",
+      "thenujastore has quickly become my go-to destination for stunning botanical-inspired jewelry. The delicate designs and use of natural elements truly set them apart. Highly recommend!",
   },
   {
     id: 3,
     name: "Sophia",
     quote:
-      "The colors and design of this website are amazing. It really stands out from the crowd.",
+      "I was blown away by the elegance and sophistication of the jewelry I received from thenujastore. From the intricate floral patterns to the quality materials, it's evident that each piece is crafted with passion and care.",
   },
   {
     id: 4,
     name: "David",
     quote:
-      "TheNujaStore offers a fantastic selection of handcrafted jewelry. I love supporting independent artisans!",
+      "thenujastore offers a fantastic selection of handcrafted jewelry. I love supporting independent artisans!",
   },
   {
     id: 5,
     name: "Emily",
     quote:
-      "I'm amazed by the quality and craftsmanship of the jewelry I purchased from TheNujaStore. It exceeded my expectations!",
+      "thenujastore's pieces are simply breathtaking! I've received numerous compliments whenever I wear them. It's wonderful to own pieces that reflect the beauty of nature and showcase the talent of skilled artisans.",
   },
 ];
 
