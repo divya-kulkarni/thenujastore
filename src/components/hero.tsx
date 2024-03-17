@@ -1,8 +1,8 @@
 import { Carousel } from "react-bootstrap";
 import "../styling/hero.css";
-import gift from "../assets/gift-hands.jpg";
-import heroBracelet from "../assets/hero/hero2.jpg";
-import heroEarrings from "../assets/hero-earrings.jpg";
+import gift from "../assets/hero/gift-hands.webp";
+import heroBracelet from "../assets/hero/hero2.webp";
+import heroEarrings from "../assets/hero/hero-earrings.webp";
 
 const interval = 30000;
 

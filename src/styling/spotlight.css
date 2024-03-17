@@ -38,7 +38,7 @@
   border: none !important;
 }
 
-@media screen and (min-width: 45rem) {
+@media screen and (min-width: 55rem) {
   .spotlight-container {
     width: 100%;
     /* position: relative; */
@@ -62,7 +62,7 @@
     background-color: transparent;
 
     h3 {
-      font-size: var(--fs-md);
+      font-size: var(--fs-sm);
       margin-top: 1rem;
     }
 
