@@ -1,7 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { Bestsellers } from "../../components/bestseller";
-// import userEvent from "@testing-library/user-event";
 import React from "react";
 
 describe("Bestsellers", () => {
@@ -26,12 +25,10 @@ describe("Bestsellers", () => {
     expect(screen.getByRole("heading", { name: "$17" })).toBeInTheDocument();
   });
 
-  //   it("routes to product page", () => {
-  //     const navigate = jest.fn();
-  //     render(React.createElement(Bestsellers), { wrapper: Router });
-  //     const buttonElement = screen.getByText(/VIEW ALL PRODUCTS/i);
-  //     console.log(buttonElement)
-  //     userEvent.click(buttonElement);
-  //     expect(navigate).toHaveBeenCalledTimes(1);
-  //   });
+  it("routes to product page", () => {
+    render(React.createElement(Bestsellers), { wrapper: Router });
+    screen.getByText(/VIEW ALL PRODUCTS/i);
+    fireEvent.click(screen.getByText(/VIEW ALL PRODUCTS/i));
+    expect(window.location.pathname).toBe("/products");
+  });
 });
