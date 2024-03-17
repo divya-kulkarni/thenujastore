@@ -12,7 +12,7 @@ export const NavBar = () => {
   const navigate = useNavigate();
 
   return (
-    <Navbar expand="md" id="navbar" fixed="top">
+    <Navbar expand="md" id="navbar" fixed="top" data-testid="navbar">
       <Container className="navbar-container">
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
         <Navbar.Brand onClick={() => navigate("/")}>
