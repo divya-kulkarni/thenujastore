@@ -9,12 +9,11 @@ import { useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
   const navigate = useNavigate();
-
   return (
     <Navbar expand="md" id="navbar" fixed="top">
       <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
       <Navbar.Brand onClick={() => navigate("/")}>
-        <img src={logo} alt="thenujastore" className="logo" />
+        <img src={logo} alt="thenujastore logo" className="logo" />
       </Navbar.Brand>
       <Navbar.Offcanvas
         id={`offcanvasNavbar-expand-md`}
@@ -32,11 +31,16 @@ export const NavBar = () => {
               HOME
             </Nav.Link>
             <hr />
-            <NavDropdown title="SHOP BY CATEGORY" className="main-link">
+            <NavDropdown
+              title="SHOP BY CATEGORY"
+              className="main-link"
+              data-testid="category"
+            >
               <NavDropdown.Item
                 href=""
                 className="inner-link"
                 onClick={() => navigate("/necklaces")}
+                data-testid="necklaces"
               >
                 NECKLACES
               </NavDropdown.Item>
@@ -63,7 +67,7 @@ export const NavBar = () => {
               </NavDropdown.Item>
             </NavDropdown>
             <hr />
-            <NavDropdown title="COLLECTIONS" className="main-link">
+            <NavDropdown title="SHOP BY COLLECTIONS" className="main-link">
               <NavDropdown.Item
                 href=""
                 className="inner-link"

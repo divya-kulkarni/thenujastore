@@ -12,7 +12,12 @@ export const Hero = () => {
       <Carousel controls={false} fade>
         <Carousel.Item interval={interval}>
           <div className="carousel-content">
-            <img src={heroEarrings} alt="" className="slide moveLeft" />
+            <img
+              src={heroEarrings}
+              alt=""
+              className="slide moveLeft"
+              loading="eager"
+            />
             <div className="overlay d-flex">
               <section
                 className="overlay-content statement align-items-center justify-content-center"
@@ -22,7 +27,7 @@ export const Hero = () => {
                   href="/products"
                   style={{ color: "white", borderColor: "white !important" }}
                 >
-                  <h5 style={{paddingBottom: "1%"}}>SHOP NOW →</h5>
+                  <h5 style={{ paddingBottom: "1%" }}>SHOP NOW →</h5>
                 </a>
                 <h5>DISCOVER YOUR PERFECT</h5>
                 <h2>STATEMENT PIECE</h2>
